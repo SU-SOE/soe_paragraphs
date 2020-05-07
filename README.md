@@ -1,5 +1,5 @@
 # [soe_paragraphs](https://github.com/SU-SWS/soe_paragraphs)
-##### Version: 8.x-2.x
+##### Version: 8.x-1.x
 
 Maintainers: [Mike Decker](https://github.com/pookmish), [sherakama](https://github.com/sherakama)
 
