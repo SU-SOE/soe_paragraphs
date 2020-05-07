@@ -1,0 +1,44 @@
+uuid: 1262dad2-6d65-4c95-865d-e6ee640db804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_list_paragraph.su_cta_list_deck
+    - field.field.paragraph.cta_list_paragraph.su_cta_list_header
+    - field.field.paragraph.cta_list_paragraph.su_cta_list_links
+    - paragraphs.paragraphs_type.cta_list_paragraph
+  module:
+    - link
+    - text
+id: paragraph.cta_list_paragraph.default
+targetEntityType: paragraph
+bundle: cta_list_paragraph
+mode: default
+content:
+  su_cta_list_deck:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  su_cta_list_header:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  su_cta_list_links:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

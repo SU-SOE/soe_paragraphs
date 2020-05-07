@@ -1,0 +1,19 @@
+uuid: e6d32f53-7ff8-4c71-a084-07cfb1210d96
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.su_cta_list_deck
+field_name: su_cta_list_deck
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

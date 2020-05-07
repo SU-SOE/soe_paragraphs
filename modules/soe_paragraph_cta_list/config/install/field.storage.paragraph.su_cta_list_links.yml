@@ -1,0 +1,19 @@
+uuid: cf553dbb-4d5c-42b0-979e-bcf23b048174
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.su_cta_list_links
+field_name: su_cta_list_links
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

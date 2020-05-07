@@ -1,0 +1,27 @@
+uuid: de9b10d0-d54c-4b66-893f-aef3644362d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.su_cta_list_deck
+    - paragraphs.paragraphs_type.cta_list_paragraph
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    stanford_html: stanford_html
+    stanford_minimal_html: stanford_minimal_html
+    plain_text: plain_text
+id: paragraph.cta_list_paragraph.su_cta_list_deck
+field_name: su_cta_list_deck
+entity_type: paragraph
+bundle: cta_list_paragraph
+label: Deck
+description: 'The body text of the CTA List paragraph'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

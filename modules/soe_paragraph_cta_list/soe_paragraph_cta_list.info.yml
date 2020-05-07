@@ -1,0 +1,11 @@
+name: 'CTA List Paragraph'
+description: 'A paragraph type which provides a list of text CTAs'
+type: module
+core: 8.x
+package: Stanford
+dependencies:
+  - ds
+  - field
+  - paragraphs
+  - text
+version: 8.x-2.0-dev

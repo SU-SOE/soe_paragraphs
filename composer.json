@@ -1,11 +1,14 @@
 {
   "name": "su-sws/soe_paragraphs",
-  "description": "Stanford Module Example",
+  "description": "SOE Paragraphs",
   "type": "drupal-custom-module",
   "homepage": "https://github.com/SU-SWS/soe_paragraphs",
   "authors": [],
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {}
+  "require": {
+    "drupal/paragraphs": "~1.8",
+    "su-sws/jumpstart_ui": "dev-8.x-1.x||*"
+  }
 }

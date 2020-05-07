@@ -1,0 +1,19 @@
+uuid: 18037b44-27fd-4c75-87fb-90e646ab2508
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.su_cta_list_header
+    - paragraphs.paragraphs_type.cta_list_paragraph
+id: paragraph.cta_list_paragraph.su_cta_list_header
+field_name: su_cta_list_header
+entity_type: paragraph
+bundle: cta_list_paragraph
+label: Header
+description: 'The headline of the CTA List Paragraph'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
