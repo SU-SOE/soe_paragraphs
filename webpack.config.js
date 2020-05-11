@@ -29,6 +29,8 @@ const srcSass = path.resolve(srcDir, 'scss');
 const distSass = path.resolve(distDir, 'css');
 const srcJS = path.resolve(srcDir, 'js');
 const distJS = path.resolve(distDir, 'js');
+const srcAssets =   path.resolve(__dirname, "lib/assets");
+const distAssets =  path.resolve(__dirname, "dist/assets")
 
 // /////////////////////////////////////////////////////////////////////////////
 // Functions ///////////////////////////////////////////////////////////////////
@@ -48,6 +50,8 @@ var webpackConfig = {
   entry: {
     "soe_paragraphs.script": path.resolve(srcJS, "soe_paragraphs.js"),
     "soe_paragraphs.styles": path.resolve(srcSass, "soe_paragraphs.scss"),
+    "cta-list-paragraph.styles": path.resolve(srcSass, "components/cta-list/index.scss"),
+    "image-cta-paragraph.styles": path.resolve(srcSass, "components/image-cta/index.scss")
   },
   // Where put build?
   output: {

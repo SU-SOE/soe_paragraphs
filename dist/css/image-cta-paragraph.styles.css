@@ -1,0 +1,14 @@
+@media only screen and (min-width: 0) {
+  .su-image-cta-paragraph {
+    padding-top: 4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .su-image-cta-paragraph {
+    padding-top: 4.5rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .su-image-cta-paragraph {
+    padding-top: 4.75rem; } }
+
+
+/*# sourceMappingURL=image-cta-paragraph.styles.css.map*/

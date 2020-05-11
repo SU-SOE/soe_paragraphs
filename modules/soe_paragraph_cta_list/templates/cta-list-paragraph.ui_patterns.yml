@@ -1,0 +1,25 @@
+cta-list-paragraph:
+  label: CTA List Paragraph
+  description: CTA List Paragraph
+  variants:
+    default:
+      label: Default
+      Description: "Default"
+  fields:
+    header:
+      type: text
+      label: "Header"
+      description: "The headline text for the paragraph"
+    deck:
+      type: text
+      label: "Deck"
+      description: "The body text for the paragraph"
+    links:
+      type: text
+      label: "One or more hyperlinks"
+  use: "@soe_paragraph_cta_list/cta-list-paragraph.html.twig"
+  libraries:
+    - cta-list-paragraph:
+        css:
+          component:
+            ../../../dist/css/cta-list-paragraph.styles.css: {}

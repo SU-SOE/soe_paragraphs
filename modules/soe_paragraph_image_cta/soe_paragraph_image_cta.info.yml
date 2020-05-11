@@ -1,5 +1,5 @@
-name: 'CTA List Paragraph'
-description: 'A paragraph type which provides a list of text CTAs'
+name: 'Image CTA Paragraph'
+description: 'A paragraph type which provides an image and CTA button'
 type: module
 core: 8.x
 package: Stanford
