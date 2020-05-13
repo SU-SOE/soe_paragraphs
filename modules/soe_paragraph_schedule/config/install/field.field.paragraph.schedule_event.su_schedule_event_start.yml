@@ -1,0 +1,21 @@
+uuid: 31f5a837-90e1-46e0-94b2-11617b11ea61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.su_schedule_event_start
+    - paragraphs.paragraphs_type.schedule_event
+id: paragraph.schedule_event.su_schedule_event_start
+field_name: su_schedule_event_start
+entity_type: paragraph
+bundle: schedule_event
+label: 'Start Time'
+description: 'The time and date the event starts.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1589388626
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

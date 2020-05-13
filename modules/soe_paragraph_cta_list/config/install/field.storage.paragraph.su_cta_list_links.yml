@@ -1,12 +1,10 @@
-uuid: cf553dbb-4d5c-42b0-979e-bcf23b048174
+uuid: 5504ddcf-8ab8-4278-bd90-1eb1866967c2
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
-_core:
-  default_config_hash: 19ZNN0-PqoV0A-UVQf2u7lKRiYgd877T-jGS69iOqQ0
 id: paragraph.su_cta_list_links
 field_name: su_cta_list_links
 entity_type: paragraph

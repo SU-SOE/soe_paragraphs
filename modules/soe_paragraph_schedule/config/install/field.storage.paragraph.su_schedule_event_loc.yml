@@ -1,12 +1,12 @@
-uuid: bffa6a6e-63b2-4409-ba54-48511a2801bf
+uuid: 1652431a-2a0e-4a34-b14c-950e819b8d74
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
-id: paragraph.su_cta_list_deck
-field_name: su_cta_list_deck
+id: paragraph.su_schedule_event_loc
+field_name: su_schedule_event_loc
 entity_type: paragraph
 type: text_long
 settings: {  }

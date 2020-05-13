@@ -1,0 +1,10 @@
+uuid: 18119ae3-66fa-4c8f-b670-1ec7975e6744
+langcode: en
+status: true
+dependencies: {  }
+id: image_cta
+label: 'Image CTA'
+icon_uuid: null
+icon_default: null
+description: 'A paragraph which provides an image with a CTA button beneath it.'
+behavior_plugins: {  }

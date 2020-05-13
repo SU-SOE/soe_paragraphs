@@ -1,20 +1,18 @@
-uuid: 1262dad2-6d65-4c95-865d-e6ee640db804
+uuid: 18bddd88-f407-4c08-aad0-3f792823976f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.cta_list_paragraph.su_cta_list_deck
-    - field.field.paragraph.cta_list_paragraph.su_cta_list_header
-    - field.field.paragraph.cta_list_paragraph.su_cta_list_links
-    - paragraphs.paragraphs_type.cta_list_paragraph
+    - field.field.paragraph.cta_list.su_cta_list_deck
+    - field.field.paragraph.cta_list.su_cta_list_header
+    - field.field.paragraph.cta_list.su_cta_list_links
+    - paragraphs.paragraphs_type.cta_list
   module:
     - link
     - text
-_core:
-  default_config_hash: Jt9oeFoPBQgseAXLL8E5QD-cisKgNyP_z5GkrbEChbI
-id: paragraph.cta_list_paragraph.default
+id: paragraph.cta_list.default
 targetEntityType: paragraph
-bundle: cta_list_paragraph
+bundle: cta_list
 mode: default
 content:
   su_cta_list_deck:

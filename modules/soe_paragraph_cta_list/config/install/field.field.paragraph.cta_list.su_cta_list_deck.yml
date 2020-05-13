@@ -1,10 +1,10 @@
-uuid: de9b10d0-d54c-4b66-893f-aef3644362d3
+uuid: 2c1953b8-c160-4f04-a74b-612a6470886f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.su_cta_list_deck
-    - paragraphs.paragraphs_type.cta_list_paragraph
+    - paragraphs.paragraphs_type.cta_list
   module:
     - allowed_formats
     - text
@@ -12,15 +12,13 @@ third_party_settings:
   allowed_formats:
     stanford_html: stanford_html
     stanford_minimal_html: stanford_minimal_html
-    plain_text: plain_text
-_core:
-  default_config_hash: 1OnKNynwJWC4uF4TkhgzxhVNebtK6OHUy4YlXrnD4K4
-id: paragraph.cta_list_paragraph.su_cta_list_deck
+    plain_text: '0'
+id: paragraph.cta_list.su_cta_list_deck
 field_name: su_cta_list_deck
 entity_type: paragraph
-bundle: cta_list_paragraph
+bundle: cta_list
 label: Description
-description: 'The body text of the CTA List paragraph'
+description: 'The body text of the paragraph'
 required: false
 translatable: false
 default_value: {  }

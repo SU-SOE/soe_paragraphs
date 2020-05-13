@@ -1,0 +1,61 @@
+uuid: ad1f9144-3472-4f0a-82d6-bf622b63a253
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.su_schedule_events
+    - paragraphs.paragraphs_type.schedule
+    - paragraphs.paragraphs_type.schedule_event
+  module:
+    - entity_reference_revisions
+id: paragraph.schedule.su_schedule_events
+field_name: su_schedule_events
+entity_type: paragraph
+bundle: schedule
+label: Events
+description: 'The events for this schedule'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      schedule_event: schedule_event
+    target_bundles_drag_drop:
+      cta_list:
+        weight: 12
+        enabled: false
+      image_cta:
+        weight: 13
+        enabled: false
+      news_image:
+        weight: 14
+        enabled: false
+      news_views:
+        weight: 15
+        enabled: false
+      schedule:
+        weight: 16
+        enabled: false
+      schedule_event:
+        enabled: true
+        weight: 17
+      stanford_banner:
+        weight: 18
+        enabled: false
+      stanford_card:
+        weight: 19
+        enabled: false
+      stanford_media_caption:
+        weight: 20
+        enabled: false
+      stanford_news_banner:
+        weight: 21
+        enabled: false
+      stanford_wysiwyg:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

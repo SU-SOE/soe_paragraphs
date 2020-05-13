@@ -1,16 +1,15 @@
-uuid: bffa6a6e-63b2-4409-ba54-48511a2801bf
+uuid: 4cf090df-696c-4310-a1e1-e2626077fce2
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-    - text
-id: paragraph.su_cta_list_deck
-field_name: su_cta_list_deck
+id: paragraph.su_schedule_event_start
+field_name: su_schedule_event_start
 entity_type: paragraph
-type: text_long
+type: timestamp
 settings: {  }
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

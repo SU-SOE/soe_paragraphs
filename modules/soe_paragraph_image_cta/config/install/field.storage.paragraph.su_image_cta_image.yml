@@ -1,16 +1,17 @@
-uuid: bffa6a6e-63b2-4409-ba54-48511a2801bf
+uuid: 2e04493d-23e4-4016-94ff-e932ac73fd4c
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
-    - text
-id: paragraph.su_cta_list_deck
-field_name: su_cta_list_deck
+id: paragraph.su_image_cta_image
+field_name: su_image_cta_image
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true
