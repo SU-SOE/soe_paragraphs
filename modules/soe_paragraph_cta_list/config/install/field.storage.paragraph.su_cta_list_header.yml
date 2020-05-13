@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: 8RYQUBfuo8J2GbZgMrbXLkjBq-v4usDtpwYU-dB2dmg
 id: paragraph.su_cta_list_header
 field_name: su_cta_list_header
 entity_type: paragraph

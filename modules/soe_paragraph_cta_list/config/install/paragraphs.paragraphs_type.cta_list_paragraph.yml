@@ -4,6 +4,8 @@ status: true
 dependencies:
   content:
     - 'file:file:a1a53248-7e28-4ed3-9a21-f7405d2ecfca'
+_core:
+  default_config_hash: uBUig54skoS_hJzyBIo9JR1qQNUoh0J8zI-UzKbKIlQ
 id: cta_list_paragraph
 label: 'CTA List Paragraph'
 icon_uuid: a1a53248-7e28-4ed3-9a21-f7405d2ecfca

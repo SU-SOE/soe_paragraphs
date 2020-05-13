@@ -13,11 +13,13 @@ third_party_settings:
     stanford_html: stanford_html
     stanford_minimal_html: stanford_minimal_html
     plain_text: plain_text
+_core:
+  default_config_hash: 1OnKNynwJWC4uF4TkhgzxhVNebtK6OHUy4YlXrnD4K4
 id: paragraph.cta_list_paragraph.su_cta_list_deck
 field_name: su_cta_list_deck
 entity_type: paragraph
 bundle: cta_list_paragraph
-label: Deck
+label: Description
 description: 'The body text of the CTA List paragraph'
 required: false
 translatable: false

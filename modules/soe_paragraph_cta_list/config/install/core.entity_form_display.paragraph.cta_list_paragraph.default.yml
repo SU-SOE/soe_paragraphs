@@ -10,6 +10,8 @@ dependencies:
   module:
     - link
     - text
+_core:
+  default_config_hash: Jt9oeFoPBQgseAXLL8E5QD-cisKgNyP_z5GkrbEChbI
 id: paragraph.cta_list_paragraph.default
 targetEntityType: paragraph
 bundle: cta_list_paragraph

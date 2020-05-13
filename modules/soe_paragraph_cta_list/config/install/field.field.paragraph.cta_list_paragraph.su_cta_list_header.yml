@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.su_cta_list_header
     - paragraphs.paragraphs_type.cta_list_paragraph
+_core:
+  default_config_hash: 2oev1ZQybBcDmmjr0NIPvMKSkNLHtQOOjzzEIBwd0To
 id: paragraph.cta_list_paragraph.su_cta_list_header
 field_name: su_cta_list_header
 entity_type: paragraph

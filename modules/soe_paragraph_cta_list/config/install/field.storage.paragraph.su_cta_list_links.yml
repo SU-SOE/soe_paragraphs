@@ -5,6 +5,8 @@ dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: 19ZNN0-PqoV0A-UVQf2u7lKRiYgd877T-jGS69iOqQ0
 id: paragraph.su_cta_list_links
 field_name: su_cta_list_links
 entity_type: paragraph
