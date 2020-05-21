@@ -1,0 +1,25 @@
+image-cta-paragraph:
+  label: Image CTA Paragraph
+  description: Image CTA Paragraph
+  variants:
+    default:
+      label: Default
+      Description: "Default"
+  fields:
+    header:
+      type: text
+      label: "Header"
+      description: "The headline text for the paragraph"
+    deck:
+      type: text
+      label: "Deck"
+      description: "The body text for the paragraph"
+    links:
+      type: text
+      label: "One or more hyperlinks"
+  use: "@soe_paragraph_image_cta/image-cta-paragraph.html.twig"
+  libraries:
+    - image-cat-paragraph:
+        css:
+          component:
+            ../../../dist/css/image-cta-paragraph.styles.css: {}
