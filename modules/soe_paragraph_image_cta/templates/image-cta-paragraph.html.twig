@@ -1,25 +1,26 @@
-image-cta-paragraph:
-  label: Image CTA Paragraph
-  description: Image CTA Paragraph
-  variants:
-    minimal:
-      label: Minimal
-      Description: "Minimal"
-  fields:
-    header:
-      type: text
-      label: "Header"
-      description: "The headline text for the paragraph"
-    deck:
-      type: text
-      label: "Deck"
-      description: "The body text for the paragraph"
-    links:
-      type: text
-      label: "One or more hyperlinks"
-  use: "@soe_paragraph_image_cta/image-cat-paragraph.html.twig"
-  libraries:
-    - image-cta-paragraphy:
-        css:
-          component:
-            ../../../dist/css/image-cta-paragraph.styles.css: {}
+
+{#
+/**
+ * @file
+ * Image CTA Paragraph
+ *
+ * Template for the Image CTA paragraph type.
+ *
+ * Available variables:
+ *
+ * {{ image }}
+ * {{ link }}
+ *
+ */
+#}
+
+{%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
+
+<div{{ attributes }}>
+    {{ kint() }}
+
+    {{ image }}
+
+    {{ link }}
+
+</div>
