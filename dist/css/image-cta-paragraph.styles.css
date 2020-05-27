@@ -1,14 +1,68 @@
-.su-image-cta-paragraph {
-  background-color: red; }
+@media (max-width: 767px) {
+  .ptype-image-cta {
+    margin-bottom: 0rem !important; } }
+
+@media only screen and (min-width: 0) {
+  .ptype-image-cta .field-media-image {
+    margin-bottom: 2.31rem; } }
+
+@media only screen and (min-width: 768px) {
+  .ptype-image-cta .field-media-image {
+    margin-bottom: 2.6rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .ptype-image-cta .field-media-image {
+    margin-bottom: 2.74rem; } }
+
+@media (max-width: 767px) {
+  .ptype-image-cta .field-media-image {
+    display: none; } }
+
+.ptype-image-cta .link {
+  color: #b1040e; }
   @media only screen and (min-width: 0) {
-    .su-image-cta-paragraph {
-      padding-top: 4rem; } }
+    .ptype-image-cta .link {
+      margin-bottom: 9.6rem; } }
   @media only screen and (min-width: 768px) {
-    .su-image-cta-paragraph {
-      padding-top: 4.5rem; } }
+    .ptype-image-cta .link {
+      margin-bottom: 10.8rem; } }
   @media only screen and (min-width: 1500px) {
-    .su-image-cta-paragraph {
-      padding-top: 4.75rem; } }
+    .ptype-image-cta .link {
+      margin-bottom: 11.4rem; } }
+  .ptype-image-cta .link a {
+    color: #b1040e; }
+  .ptype-image-cta .link:after {
+    background-color: #b1040e; }
+    .ptype-image-cta .link:after:hover {
+      background-color: #b1040e; }
+    .ptype-image-cta .link:after:focus {
+      background-color: #b1040e; }
+    .ptype-image-cta .link:after:active {
+      background-color: #b1040e; }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 0) {
+  .ptype-image-cta .link {
+    margin-bottom: 8rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
+  .ptype-image-cta .link {
+    margin-bottom: 9rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1500px) {
+  .ptype-image-cta .link {
+    margin-bottom: 9.5rem; } }
+
+@media only screen and (max-width: 767px) and (min-width: 0) {
+  .ptype-image-cta .link {
+    margin-bottom: 1.6rem; } }
+
+@media only screen and (max-width: 767px) and (min-width: 768px) {
+  .ptype-image-cta .link {
+    margin-bottom: 1.8rem; } }
+
+@media only screen and (max-width: 767px) and (min-width: 1500px) {
+  .ptype-image-cta .link {
+    margin-bottom: 1.9rem; } }
 
 
 /*# sourceMappingURL=image-cta-paragraph.styles.css.map*/
