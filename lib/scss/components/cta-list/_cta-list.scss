@@ -4,7 +4,6 @@
     @include modular-spacing('padding-left', 2);
     @include modular-spacing('padding-right', 2);
 
-    background-color:#eee;
     border-top: 1px solid $su-color-cool-grey-25;
 
     @include grid-media-only('xs'){
@@ -47,6 +46,20 @@
 
             a{
                 color: $su-color-bright-red;
+
+                &:after{
+                    background-color: $su-color-bright-red;
+
+                    &:hover {
+                        background-color: $su-color-bright-red;
+                    }
+                    &:focus {
+                        background-color: $su-color-bright-red;
+                    }
+                    &:active {
+                        background-color: $su-color-bright-red;
+                    }
+                }
             }
 
             @include grid-media-only('xs'){
@@ -63,6 +76,20 @@
 
             a{
                 color: $su-color-bright-red;
+
+                &:after{
+                    background-color: $su-color-bright-red;
+
+                    &:hover {
+                        background-color: $su-color-bright-red;
+                    }
+                    &:focus {
+                        background-color: $su-color-bright-red;
+                    }
+                    &:active {
+                        background-color: $su-color-bright-red;
+                    }
+                }
             }
 
             @include grid-media-only('xs'){
