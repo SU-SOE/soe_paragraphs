@@ -51,7 +51,8 @@ var webpackConfig = {
     "soe_paragraphs.script": path.resolve(srcJS, "soe_paragraphs.js"),
     "soe_paragraphs.styles": path.resolve(srcSass, "soe_paragraphs.scss"),
     "cta-list-paragraph.styles": path.resolve(srcSass, "components/cta-list/index.scss"),
-    "image-cta-paragraph.styles": path.resolve(srcSass, "components/image-cta/index.scss")
+    "image-cta-paragraph.styles": path.resolve(srcSass, "components/image-cta/index.scss"),
+    "stories-paragraph.styles": path.resolve(srcSass, "components/stories/index.scss")
   },
   // Where put build?
   output: {

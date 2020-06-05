@@ -32,7 +32,7 @@ image-cta-paragraph:
       description: "The link to display for the Paragraph"
   use: "@soe_paragraph_image_cta/image-cta-paragraph.html.twig"
   libraries:
-    - image-cat-paragraph:
+    - image-cta-paragraph:
         css:
           component:
             ../../../dist/css/image-cta-paragraph.styles.css: {}

@@ -1,0 +1,22 @@
+stories-paragraph:
+  label: Stories Paragraph
+  description: Stories Paragraph
+  variants:
+    default:
+      label: Minimal
+      description: "Minimal"
+  fields:
+    image:
+      type: text
+      label: "Image"
+      description: "The image to display for the Paragraph"
+    link:
+      type: text
+      label: "CTA Link"
+      description: "The link to display for the Paragraph"
+  use: "@soe_paragraph_stories/stories-paragraph.html.twig"
+  libraries:
+    - stories-paragraph:
+        css:
+          component:
+            ../../../dist/css/stories-paragraph.styles.css: {}
