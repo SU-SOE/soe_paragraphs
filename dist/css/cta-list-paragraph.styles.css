@@ -177,19 +177,22 @@
             background-color: #b1040e; }
           .su-cta-list-paragraph .su-cta-list--links .col-2 a:after:active {
             background-color: #b1040e; }
+
+@media only screen and (max-width: 991px) and (min-width: 0) {
+  .su-cta-list-paragraph .su-cta-list--links .col-2 {
+    margin-right: 2.31rem; } }
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .su-cta-list-paragraph .su-cta-list--links .col-2 {
+    margin-right: 2.6rem; } }
+
+@media only screen and (max-width: 991px) and (min-width: 1500px) {
+  .su-cta-list-paragraph .su-cta-list--links .col-2 {
+    margin-right: 2.74rem; } }
       @media only screen and (min-width: 0) and (max-width: 575px) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {
           display: block;
           width: 100%; } }
-  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 0) {
-    .su-cta-list-paragraph .su-cta-list--links .col-2 {
-      margin-right: 2.31rem; } }
-  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 768px) {
-    .su-cta-list-paragraph .su-cta-list--links .col-2 {
-      margin-right: 2.6rem; } }
-  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 1500px) {
-    .su-cta-list-paragraph .su-cta-list--links .col-2 {
-      margin-right: 2.74rem; } }
 
 
 /*# sourceMappingURL=cta-list-paragraph.styles.css.map*/

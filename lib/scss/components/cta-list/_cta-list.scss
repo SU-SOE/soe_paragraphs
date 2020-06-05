@@ -92,10 +92,13 @@
                 }
             }
 
+            @include grid-media-between('xs', 'md'){
+                @include modular-spacing('margin-right', 1);
+            }
+
             @include grid-media-only('xs'){
                 display: block;
                 width: 100%;
-                @include modular-spacing('margin-right', 1);
             };
         }
     }

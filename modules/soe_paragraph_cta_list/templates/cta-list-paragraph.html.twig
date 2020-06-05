@@ -42,24 +42,35 @@
 
     <div class="su-cta-list--links">
 
-        {% if link_count > 1 %}
+        {% if link_count == 3 %}
+
+            <div class="col-1">
+                <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
+                <a href="{{ links.su_cta_list_links[1]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[1]['#title'] }}</a>
+            </div>
+
+            <div class="col-2">
+                <a href="{{ links.su_cta_list_links[2]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[2]['#title'] }}</a>
+            </div>
+
+        {% elseif link_count > 1 %}
 
             <div class="col-1">
                 {%- for i in 0..col_1_link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
+                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
                 {% endfor -%}
             </div>
 
             <div class="col-2">
                 {% for i in col_2_link_count..link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
+                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
                 {% endfor -%}
             </div>
 
         {% else %}
 
         <div class="col-1">
-            <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
+            <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
         </div>
 
         {% endif %}

@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.image_cta
   module:
     - link
+_core:
+  default_config_hash: 2z_z-U6nT6_gxW18jqQPs9d2A_zy0wE9WAutvQegIxw
 id: paragraph.image_cta.su_image_cta_link
 field_name: su_image_cta_link
 entity_type: paragraph

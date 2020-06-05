@@ -9,6 +9,8 @@ dependencies:
   module:
     - link
     - media_library
+_core:
+  default_config_hash: eyySx7hWKQAddWUHTEH6HljT3ntrayYyW-yK7scjcBc
 id: paragraph.image_cta.default
 targetEntityType: paragraph
 bundle: image_cta

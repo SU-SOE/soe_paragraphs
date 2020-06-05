@@ -2,6 +2,8 @@ uuid: 720f8414-f928-430d-b01f-5691a02dcf56
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: w0RdTG1ifpSPTPZRRZRK4Xb5o9b2M_PV4zdglnseRHQ
 id: cta_list
 label: 'CTA List'
 icon_uuid: null

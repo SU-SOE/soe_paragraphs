@@ -8,8 +8,29 @@ dependencies:
     - field.field.paragraph.cta_list.su_cta_list_links
     - paragraphs.paragraphs_type.cta_list
   module:
+    - ds
     - link
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_cta-list-paragraph
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          variant: default
+    regions:
+      header:
+        - su_cta_list_header
+      deck:
+        - su_cta_list_deck
+      links:
+        - su_cta_list_links
+_core:
+  default_config_hash: H5URs120HzqlqumTNKdBAhvQmvrYyJ-G2TtWe1gtfp0
 id: paragraph.cta_list.default
 targetEntityType: paragraph
 bundle: cta_list
@@ -21,7 +42,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: deck
   su_cta_list_header:
     weight: 0
     label: hidden
@@ -29,7 +50,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: header
   su_cta_list_links:
     weight: 2
     label: hidden
@@ -41,5 +62,5 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: links
 hidden: {  }

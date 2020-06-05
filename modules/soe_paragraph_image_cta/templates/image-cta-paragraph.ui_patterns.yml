@@ -3,8 +3,24 @@ image-cta-paragraph:
   description: Image CTA Paragraph
   variants:
     default:
-      label: Default
-      Description: "Default"
+      label: Minimal
+      description: "Minimal"
+    minimal:
+      label: Card
+      description: "Card"
+      modifier_class: su-image-cta-paragraph--card
+    color1:
+      label: "Color 1"
+      description: "Color Button Variant 1"
+      modifier_class: su-image-cta-paragraph--color-1
+    color2:
+      label: "Color 2"
+      description: "Color Button Variant 2"
+      modifier_class: su-image-cta-paragraph--color-2
+    color3:
+      label: "Color 3"
+      description: "Color Button Variant 3"
+      modifier_class: su-image-cta-paragraph--color-3
   fields:
     image:
       type: text

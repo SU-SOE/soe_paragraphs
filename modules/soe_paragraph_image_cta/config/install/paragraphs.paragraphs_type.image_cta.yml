@@ -2,6 +2,8 @@ uuid: 18119ae3-66fa-4c8f-b670-1ec7975e6744
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: yRQYSu2j_VMw4uLQRf2O7Pk0DZ6UZzhhl4yGMPUTQx4
 id: image_cta
 label: 'Image CTA'
 icon_uuid: null
