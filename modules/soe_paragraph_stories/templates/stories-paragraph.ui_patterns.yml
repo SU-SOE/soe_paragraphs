@@ -10,10 +10,18 @@ stories-paragraph:
       type: text
       label: "Image"
       description: "The image to display for the Paragraph"
-    link:
+    name:
       type: text
-      label: "CTA Link"
-      description: "The link to display for the Paragraph"
+      label: "Name"
+      description: "The name and title of the person"
+    quote:
+      type: text
+      label: "Quote"
+      description: "The quote to feature"
+    links:
+      type: text
+      label: "Links"
+      description: "The link to the full story, and optional CTA button"
   use: "@soe_paragraph_stories/stories-paragraph.html.twig"
   libraries:
     - stories-paragraph:

@@ -1,5 +1,54 @@
-.su-cta-list-paragraph{
+.su-stories-paragraph{
 
-    background-color: red;
+    background-color: #eee;
+    @include modular-spacing('padding-top', 2);
+
+    display: flex;
+    flex-direction: row;
+
+    .su-stories-photo{
+        @include modular-spacing('padding', 2);
+        flex: 1;
+        img {
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            border: 6px black solid;
+            overflow: hidden;
+        }
+
+    }
+
+    .su-stories--details {
+        flex: 1;
+    }
+
+    .su-stories-name{
+        @include type-b;
+    }
+
+    .su-stories-title{
+        @include big-paragraph;
+        @include modular-spacing('margin-bottom', 0);
+    }
+
+    .su-stories-quote{
+        @include type-a;
+        @include modular-spacing('margin-bottom', 3);
+    }
+
+    .su-stories-node-link{
+        @include modular-spacing('margin-bottom', 6);
+    }
+
+    .su-stories-cta-link{
+        @include modular-spacing('margin-bottom', 5);
+        @include modular-spacing('padding', 0);
+        background-color: ;
+    }
+
+
+
+
 
 }

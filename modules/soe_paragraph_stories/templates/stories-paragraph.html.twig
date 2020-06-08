@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Stories Paragraph
+ *
+ * Template for the Stories paragraph type.
+ *
+ * Available variables:
+ *
+ * {{ image }}
+ * {{ name }}
+ * {{ quote }}
+ * {{ links }}
+ * {{ attributes }}
+ * {{ variant }}
+ *
+ */
+#}
+
+{%- set attributes = attributes.addClass(['su-stories-paragraph', modifier_class]) -%}
+
+<div{{ attributes }}>
+    {{ kint(_context|keys) }}
+
+    {{ image }}
+
+    <div class="su-stories--details">
+        {{ name }}
+
+        {{ quote }}
+
+        {{ links }}
+    </div>
+
+</div>
