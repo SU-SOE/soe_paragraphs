@@ -6,17 +6,17 @@
 
     border-top: 1px solid $su-color-cool-grey-25;
 
-    @include grid-media-only('xs'){
+    @include grid-media-between('xs', 'md'){
         @include modular-spacing('padding-left', 0);
         @include modular-spacing('padding-right', 0);
     }
 
-    .su-cta-list-header {
+    .su-cta-list-paragraph--header {
         @include type-b;
         @include modular-spacing('margin-bottom', 1);
     }
 
-    .su-cta-list-deck {
+    .su-cta-list-paragraph--description{
         @include big-paragraph;
         @include modular-spacing('margin-bottom', 3);
     }
@@ -25,11 +25,13 @@
         @include modular-spacing('padding-bottom', 7);
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
 
         @include grid-media-only('xs'){
             display: block;
             width: 100%;
+            @include modular-spacing('padding-bottom', 1);
         };
 
         .su-link--action {
@@ -43,6 +45,7 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+            min-width: 200px;
 
             a{
                 color: $su-color-bright-red;
@@ -69,10 +72,11 @@
         }
 
         .col-2{
-            @include modular-spacing('margin-right', 8);
+            @include modular-spacing('margin-right', 7);
             display: flex;
             flex-direction: column;
             flex: 1;
+
 
             a{
                 color: $su-color-bright-red;
@@ -92,7 +96,8 @@
                 }
             }
 
-            @include grid-media-between('xs', 'md'){
+            @include grid-media-between('xs', 'lg'){
+                min-width: 150px;
                 @include modular-spacing('margin-right', 1);
             }
 

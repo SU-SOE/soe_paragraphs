@@ -10,7 +10,8 @@
  * {{ image }}
  * {{ name }}
  * {{ quote }}
- * {{ links }}
+ * {{ link }}
+ * {{ cta }}
  * {{ attributes }}
  * {{ variant }}
  *
@@ -20,16 +21,17 @@
 {%- set attributes = attributes.addClass(['su-stories-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
-    {{ kint(_context|keys) }}
-
-    {{ image }}
-
-    <div class="su-stories--details">
-        {{ name }}
-
-        {{ quote }}
-
-        {{ links }}
+    <div class="flex-12-of-12 flex-lg-10-of-12 flex-xl-8-of-12 su-stories--card">
+        <div class="su-stories--content">
+            {{ image }}
+            <div class="su-stories--details">
+                {{ name }}
+                {{ quote }}
+                {{ link }}
+            </div>
+        </div>
+        <div class="su-stories--cta">
+            {{ cta }}
+        </div>
     </div>
-
 </div>

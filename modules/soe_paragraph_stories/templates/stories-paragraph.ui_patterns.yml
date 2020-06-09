@@ -18,10 +18,14 @@ stories-paragraph:
       type: text
       label: "Quote"
       description: "The quote to feature"
-    links:
+    link:
       type: text
       label: "Links"
-      description: "The link to the full story, and optional CTA button"
+      description: "The link to the full story"
+    cta:
+      type: text
+      label: "CTA"
+      description: "An optional CTA button"
   use: "@soe_paragraph_stories/stories-paragraph.html.twig"
   libraries:
     - stories-paragraph:

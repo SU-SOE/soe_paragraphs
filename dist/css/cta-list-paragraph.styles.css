@@ -28,56 +28,56 @@
     .su-cta-list-paragraph {
       padding-right: 3.8rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 0) {
+@media only screen and (max-width: 991px) and (min-width: 0) {
   .su-cta-list-paragraph {
     padding-left: 1.6rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
   .su-cta-list-paragraph {
     padding-left: 1.8rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 1500px) {
+@media only screen and (max-width: 991px) and (min-width: 1500px) {
   .su-cta-list-paragraph {
     padding-left: 1.9rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 0) {
+@media only screen and (max-width: 991px) and (min-width: 0) {
   .su-cta-list-paragraph {
     padding-right: 1.6rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
   .su-cta-list-paragraph {
     padding-right: 1.8rem; } }
 
-@media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 1500px) {
+@media only screen and (max-width: 991px) and (min-width: 1500px) {
   .su-cta-list-paragraph {
     padding-right: 1.9rem; } }
-  .su-cta-list-paragraph .su-cta-list-header {
+  .su-cta-list-paragraph .su-cta-list-paragraph--header {
     font-size: 1.953125em;
     letter-spacing: -0.016em; }
     @media (max-width: 767px) {
-      .su-cta-list-paragraph .su-cta-list-header {
+      .su-cta-list-paragraph .su-cta-list-paragraph--header {
         font-size: 1.66015625em; } }
     @media only screen and (min-width: 0) {
-      .su-cta-list-paragraph .su-cta-list-header {
+      .su-cta-list-paragraph .su-cta-list-paragraph--header {
         margin-bottom: 2.31rem; } }
     @media only screen and (min-width: 768px) {
-      .su-cta-list-paragraph .su-cta-list-header {
+      .su-cta-list-paragraph .su-cta-list-paragraph--header {
         margin-bottom: 2.6rem; } }
     @media only screen and (min-width: 1500px) {
-      .su-cta-list-paragraph .su-cta-list-header {
+      .su-cta-list-paragraph .su-cta-list-paragraph--header {
         margin-bottom: 2.74rem; } }
   @media only screen and (min-width: 768px) {
-    .su-cta-list-paragraph .su-cta-list-deck {
+    .su-cta-list-paragraph .su-cta-list-paragraph--description {
       font-size: 2.1rem;
       line-height: 1.7; } }
   @media only screen and (min-width: 0) {
-    .su-cta-list-paragraph .su-cta-list-deck {
+    .su-cta-list-paragraph .su-cta-list-paragraph--description {
       margin-bottom: 4rem; } }
   @media only screen and (min-width: 768px) {
-    .su-cta-list-paragraph .su-cta-list-deck {
+    .su-cta-list-paragraph .su-cta-list-paragraph--description {
       margin-bottom: 4.5rem; } }
   @media only screen and (min-width: 1500px) {
-    .su-cta-list-paragraph .su-cta-list-deck {
+    .su-cta-list-paragraph .su-cta-list-paragraph--description {
       margin-bottom: 4.75rem; } }
   .su-cta-list-paragraph .su-cta-list--links {
     display: -webkit-box;
@@ -87,6 +87,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%; }
     @media only screen and (min-width: 0) {
       .su-cta-list-paragraph .su-cta-list--links {
@@ -101,6 +103,15 @@
       .su-cta-list-paragraph .su-cta-list--links {
         display: block;
         width: 100%; } }
+  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 0) {
+    .su-cta-list-paragraph .su-cta-list--links {
+      padding-bottom: 2.31rem; } }
+  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 768px) {
+    .su-cta-list-paragraph .su-cta-list--links {
+      padding-bottom: 2.6rem; } }
+  @media only screen and (min-width: 0) and (max-width: 575px) and (min-width: 1500px) {
+    .su-cta-list-paragraph .su-cta-list--links {
+      padding-bottom: 2.74rem; } }
     .su-cta-list-paragraph .su-cta-list--links .su-link--action {
       display: block;
       width: 100%; }
@@ -123,7 +134,8 @@
               flex-direction: column;
       -webkit-box-flex: 1;
           -ms-flex: 1;
-              flex: 1; }
+              flex: 1;
+      min-width: 200px; }
       @media only screen and (min-width: 0) {
         .su-cta-list-paragraph .su-cta-list--links .col-1 {
           margin-right: 2.31rem; } }
@@ -160,13 +172,13 @@
               flex: 1; }
       @media only screen and (min-width: 0) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {
-          margin-right: 11.2rem; } }
+          margin-right: 9.6rem; } }
       @media only screen and (min-width: 768px) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {
-          margin-right: 12.6rem; } }
+          margin-right: 10.8rem; } }
       @media only screen and (min-width: 1500px) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {
-          margin-right: 13.3rem; } }
+          margin-right: 11.4rem; } }
       .su-cta-list-paragraph .su-cta-list--links .col-2 a {
         color: #b1040e; }
         .su-cta-list-paragraph .su-cta-list--links .col-2 a:after {
@@ -177,18 +189,18 @@
             background-color: #b1040e; }
           .su-cta-list-paragraph .su-cta-list--links .col-2 a:after:active {
             background-color: #b1040e; }
-
-@media only screen and (max-width: 991px) and (min-width: 0) {
-  .su-cta-list-paragraph .su-cta-list--links .col-2 {
-    margin-right: 2.31rem; } }
-
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  .su-cta-list-paragraph .su-cta-list--links .col-2 {
-    margin-right: 2.6rem; } }
-
-@media only screen and (max-width: 991px) and (min-width: 1500px) {
-  .su-cta-list-paragraph .su-cta-list--links .col-2 {
-    margin-right: 2.74rem; } }
+      @media (max-width: 1199px) {
+        .su-cta-list-paragraph .su-cta-list--links .col-2 {
+          min-width: 150px; } }
+  @media only screen and (max-width: 1199px) and (min-width: 0) {
+    .su-cta-list-paragraph .su-cta-list--links .col-2 {
+      margin-right: 2.31rem; } }
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .su-cta-list-paragraph .su-cta-list--links .col-2 {
+      margin-right: 2.6rem; } }
+  @media only screen and (max-width: 1199px) and (min-width: 1500px) {
+    .su-cta-list-paragraph .su-cta-list--links .col-2 {
+      margin-right: 2.74rem; } }
       @media only screen and (min-width: 0) and (max-width: 575px) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {
           display: block;

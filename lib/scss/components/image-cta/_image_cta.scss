@@ -1,10 +1,16 @@
 .ptype-image-cta {
+    @include grid-media-between('xs', 'sm'){
+        margin-bottom: 0px !important;
+    };
+}
+
+.su-image-cta-paragraph {
 
     @include grid-media-between('xs', 'sm'){
-        margin-bottom: 0rem !important;
+        @include modular-spacing('margin-bottom', 1);
     };
 
-    .field-media-image {
+    .su-image-cta-paragraph--image {
         @include modular-spacing('margin-bottom', 1);
 
         @include grid-media-between('xs', 'sm'){
@@ -12,9 +18,8 @@
         };
     }
 
-    .link {
+    .su-image-cta-paragraph--link {
         @include modular-spacing('margin-bottom', 7);
-        color: $su-color-bright-red;
 
         a {
             color: $su-color-bright-red;
