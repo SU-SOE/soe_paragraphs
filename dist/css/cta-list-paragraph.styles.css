@@ -147,13 +147,13 @@
           margin-right: 2.74rem; } }
       .su-cta-list-paragraph .su-cta-list--links .col-1 a {
         color: #b1040e; }
-        .su-cta-list-paragraph .su-cta-list--links .col-1 a:after {
+        .su-cta-list-paragraph .su-cta-list--links .col-1 a::after {
           background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-1 a:after:hover {
+          .su-cta-list-paragraph .su-cta-list--links .col-1 a::after:hover {
             background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-1 a:after:focus {
+          .su-cta-list-paragraph .su-cta-list--links .col-1 a::after:focus {
             background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-1 a:after:active {
+          .su-cta-list-paragraph .su-cta-list--links .col-1 a::after:active {
             background-color: #b1040e; }
       @media only screen and (min-width: 0) and (max-width: 575px) {
         .su-cta-list-paragraph .su-cta-list--links .col-1 {
@@ -181,13 +181,13 @@
           margin-right: 11.4rem; } }
       .su-cta-list-paragraph .su-cta-list--links .col-2 a {
         color: #b1040e; }
-        .su-cta-list-paragraph .su-cta-list--links .col-2 a:after {
+        .su-cta-list-paragraph .su-cta-list--links .col-2 a::after {
           background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-2 a:after:hover {
+          .su-cta-list-paragraph .su-cta-list--links .col-2 a::after:hover {
             background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-2 a:after:focus {
+          .su-cta-list-paragraph .su-cta-list--links .col-2 a::after:focus {
             background-color: #b1040e; }
-          .su-cta-list-paragraph .su-cta-list--links .col-2 a:after:active {
+          .su-cta-list-paragraph .su-cta-list--links .col-2 a::after:active {
             background-color: #b1040e; }
       @media (max-width: 1199px) {
         .su-cta-list-paragraph .su-cta-list--links .col-2 {

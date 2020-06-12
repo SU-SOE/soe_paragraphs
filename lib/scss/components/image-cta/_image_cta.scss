@@ -2,54 +2,56 @@
 
 .ptype-image-cta {
 
-    @include grid-media-between('xs', 'sm'){
-        margin-bottom: 0px !important;
-    };
+  @include grid-media-between('xs', 'sm') {
+    margin-bottom: 0;
+  };
 }
 
 .su-image-cta-paragraph {
 
-    @include grid-media-between('xs', 'sm'){
-        @include modular-spacing('margin-bottom', 1);
+  @include grid-media-between('xs', 'sm') {
+    @include modular-spacing('margin-bottom', 1);
+  };
+
+  .su-image-cta-paragraph--image {
+    @include modular-spacing('margin-bottom', 1);
+
+    @include grid-media-between('xs', 'sm') {
+      display: none;
+    };
+  }
+
+  .su-image-cta-paragraph--link {
+    @include modular-spacing('margin-bottom', 7);
+
+    a {
+      color: $su-color-bright-red;
+    }
+
+    &::after {
+      background-color: $su-color-bright-red;
+
+      &:hover {
+        background-color: $su-color-bright-red;
+      }
+
+      &:focus {
+        background-color: $su-color-bright-red;
+      }
+
+      &:active {
+        background-color: $su-color-bright-red;
+      }
+    }
+
+    @include grid-media-between('md', 'lg') {
+      @include modular-spacing('margin-bottom', 6);
     };
 
-    .su-image-cta-paragraph--image {
-        @include modular-spacing('margin-bottom', 1);
+    @include grid-media-between('xs', 'sm') {
+      @include modular-spacing('margin-bottom', 0);
+    };
 
-        @include grid-media-between('xs', 'sm'){
-            display: none;
-        };
-    }
-
-    .su-image-cta-paragraph--link {
-        @include modular-spacing('margin-bottom', 7);
-
-        a {
-            color: $su-color-bright-red;
-        }
-
-        &:after{
-            background-color: $su-color-bright-red;
-
-            &:hover {
-                background-color: $su-color-bright-red;
-            }
-            &:focus {
-                background-color: $su-color-bright-red;
-            }
-            &:active {
-                background-color: $su-color-bright-red;
-            }
-        }
-
-        @include grid-media-between('md', 'lg'){
-            @include modular-spacing('margin-bottom', 6);
-        };
-
-        @include grid-media-between('xs', 'sm'){
-            @include modular-spacing('margin-bottom', 0);
-        };
-
-    }
+  }
 
 }
