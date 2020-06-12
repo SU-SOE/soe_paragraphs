@@ -1,14 +1,16 @@
-uuid: 4cf090df-696c-4310-a1e1-e2626077fce2
+uuid: a5e8bf0d-457f-4027-bd2e-a7bb54edac33
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
-id: paragraph.su_schedule_event_start
-field_name: su_schedule_event_start
+id: paragraph.su_stories_photo
+field_name: su_stories_photo
 entity_type: paragraph
-type: timestamp
-settings: {  }
+type: entity_reference
+settings:
+  target_type: media
 module: core
 locked: false
 cardinality: 1

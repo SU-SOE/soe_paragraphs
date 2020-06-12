@@ -5,6 +5,8 @@ dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: gyhOj3z9nel3P1plyLM_otVsdpOKLOQgStN5X7eh6qk
 id: paragraph.su_cta_list_deck
 field_name: su_cta_list_deck
 entity_type: paragraph

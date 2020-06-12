@@ -1,15 +1,17 @@
-uuid: 34f8c758-328c-406a-a217-bea96b93d982
+uuid: 99ca2283-3bed-4156-8feb-64d0cc9e6959
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.su_schedule_event_end
-field_name: su_schedule_event_end
+    - text
+id: paragraph.su_stories_quote
+field_name: su_stories_quote
 entity_type: paragraph
-type: timestamp
-settings: {  }
-module: core
+type: text
+settings:
+  max_length: 101
+module: text
 locked: false
 cardinality: 1
 translatable: true

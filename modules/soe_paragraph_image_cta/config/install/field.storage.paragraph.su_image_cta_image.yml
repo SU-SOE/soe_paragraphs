@@ -5,6 +5,8 @@ dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: YRnvQ6yz4j3CohCFnKEeQyfP30eYppKEv8tMNBMgTeQ
 id: paragraph.su_image_cta_image
 field_name: su_image_cta_image
 entity_type: paragraph

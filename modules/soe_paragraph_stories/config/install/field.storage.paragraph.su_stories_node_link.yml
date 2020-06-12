@@ -1,16 +1,16 @@
-uuid: e07176a8-f0cf-41ee-9754-5581a5a9a1c8
+uuid: bedbb3f1-a71e-43e5-b23a-c93d42bf87ca
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - paragraphs
-    - text
-id: paragraph.su_schedule_event_deck
-field_name: su_schedule_event_deck
+id: paragraph.su_stories_node_link
+field_name: su_stories_node_link
 entity_type: paragraph
-type: text_long
+type: link
 settings: {  }
-module: text
+module: link
 locked: false
 cardinality: 1
 translatable: true

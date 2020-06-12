@@ -1,11 +1,11 @@
-uuid: 8e2b2976-b422-4fa2-810b-120ce41b88d7
+uuid: 28da393c-1915-4b0f-bc04-bc755be8978a
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.su_schedule_event_head
-field_name: su_schedule_event_head
+id: paragraph.su_stories_name
+field_name: su_stories_name
 entity_type: paragraph
 type: string
 settings:

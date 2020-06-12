@@ -1,0 +1,96 @@
+.su-stories-paragraph{
+
+    .su-stories--grid-spacer{
+        @include grid-media-between('xs', 'sm'){
+            display: none;
+        };
+    }
+
+    .su-stories--card{
+        @include card();
+        .su-stories--content{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            @include modular-spacing('padding', 2);
+            @include grid-media-between('xs', 'sm'){
+                display: block;
+                @include modular-spacing('padding-top', 0);
+            };
+        }
+
+        .su-stories-photo{
+
+
+            img {
+                width: 290px;
+                height: 290px;
+                min-width: 290px;
+                min-height: 290px;
+                border-radius: 50%;
+                border: 6px black solid;
+                overflow: hidden;
+                @include modular-spacing('margin-left', 2);
+                @include modular-spacing('margin-right', 5);
+
+                @include grid-media-between('md', 'lg'){
+                    width: 255px;
+                    height: 255px;
+                    min-width: 255px;
+                    min-height: 255px;
+                };
+
+                @include grid-media-between('xs', 'sm'){
+                    display: block;
+                    @include modular-spacing('margin-top', 2);
+                    @include modular-spacing('margin-bottom', 2);
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding:0px;
+                    width: 220px;
+                    height: 220px;
+                    min-width: 220px;
+                    min-height: 220px;
+                };
+            }
+        }
+
+        .su-stories--details {
+
+            @include grid-media-between('xs', 'sm'){
+                display: block;
+            };
+        }
+
+        .su-stories-name{
+            @include type-b;
+            @include modular-spacing('margin-top', 0);
+        }
+
+        .su-stories-title{
+            @include big-paragraph;
+            @include modular-spacing('margin-bottom', 0);
+        }
+
+        .su-stories-quote{
+            @include type-a;
+            @include modular-spacing('margin-bottom', 3);
+        }
+
+        .su-stories-node-link{
+            @include modular-spacing('margin-bottom', 6);
+        }
+
+        .su-stories--cta{
+            display: flex;
+            justify-content: center;
+            @include modular-spacing('padding-bottom', 5);
+
+            .su-stories-cta-link{
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

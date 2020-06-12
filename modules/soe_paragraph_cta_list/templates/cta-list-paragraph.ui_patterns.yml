@@ -16,7 +16,8 @@ cta-list-paragraph:
       description: "The body text for the paragraph"
     links:
       type: text
-      label: "One or more hyperlinks"
+      label: "Links"
+      description: "One or more hyperlinks"
   use: "@soe_paragraph_cta_list/cta-list-paragraph.html.twig"
   libraries:
     - cta-list-paragraph:

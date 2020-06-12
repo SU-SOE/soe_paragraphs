@@ -1,10 +1,10 @@
-uuid: 4ea8152b-949b-479a-bf63-ae540dc12d6f
+uuid: 710f7045-be99-4649-b3bf-cb7246afba38
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.su_schedule_event_loc
-    - paragraphs.paragraphs_type.schedule_event
+    - field.storage.paragraph.su_stories_quote
+    - paragraphs.paragraphs_type.soe_stories
   module:
     - allowed_formats
     - text
@@ -13,15 +13,15 @@ third_party_settings:
     stanford_html: stanford_html
     stanford_minimal_html: stanford_minimal_html
     plain_text: plain_text
-id: paragraph.schedule_event.su_schedule_event_loc
-field_name: su_schedule_event_loc
+id: paragraph.soe_stories.su_stories_quote
+field_name: su_stories_quote
 entity_type: paragraph
-bundle: schedule_event
-label: 'Event Location'
-description: 'The event the location occurs'
+bundle: soe_stories
+label: Quote
+description: 'Limited to 101 characters'
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: text

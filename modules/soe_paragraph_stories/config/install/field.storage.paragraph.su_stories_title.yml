@@ -1,16 +1,18 @@
-uuid: 1652431a-2a0e-4a34-b14c-950e819b8d74
+uuid: 6adfbb5a-7799-407c-87c3-fe517f15e438
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-    - text
-id: paragraph.su_schedule_event_loc
-field_name: su_schedule_event_loc
+id: paragraph.su_stories_title
+field_name: su_stories_title
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -14,56 +14,34 @@
  *
  */
 #}
-
 {%- set attributes = attributes.addClass(['su-cta-list-paragraph', modifier_class]) -%}
 {%- set link_count = links.su_cta_list_links['#items']|length -%}
-
 {# We need to figure out how many links go in each column. #}
-
-
-{% if link_count%2 == 0 %}
+{%- if link_count%2 == 0 -%}
     {%- set col_1_link_count = link_count/2 -%}
-    {%- set col_2_link_count = link_count/2 -%}
-{% else %}
-    {%- set col_1_link_count = (link_count/2)+1 -%}
-    {%- set col_2_link_count = link_count/2  -%}
-{% endif %}
-
+{%- else -%}
+    {%- set col_1_link_count = ((link_count/2)-(1/2))+1 -%}
+{%- endif -%}
 
 <div{{ attributes }}>
-    {# kint(links.su_cta_list_links) #}
-
     {{ header }}
-
-    <div>
-        {{ deck }}
-    </div>
-
-
+    {{ deck }}
     <div class="su-cta-list--links">
-
-        {% if link_count > 1 %}
-
+        {%- if link_count > 1 -%}
             <div class="col-1">
                 {%- for i in 0..col_1_link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
+                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
                 {% endfor -%}
             </div>
-
             <div class="col-2">
-                {% for i in col_2_link_count..link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
+                {%- for i in col_1_link_count..link_count-1 %}
+                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
                 {% endfor -%}
             </div>
-
-        {% else %}
-
+        {%- else -%}
         <div class="col-1">
-            <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
+            <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
         </div>
-
-        {% endif %}
-
+        {%- endif -%}
     </div>
-
 </div>
