@@ -28,7 +28,7 @@ third_party_settings:
       link:
         - su_image_cta_link
 _core:
-  default_config_hash: UrDCC9g7Uz_yKHyPIi91ZLRcO0GzLFw7_sVVz4aRHgw
+  default_config_hash: BpSjneacUWnuKWYre5UiKK7BeIDibO6xRBvmVWcsdIU
 id: paragraph.image_cta.default
 targetEntityType: paragraph
 bundle: image_cta
@@ -44,7 +44,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: su-image-cta-paragraph--image
     region: image
   su_image_cta_link:
     weight: 1
@@ -57,7 +57,7 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'su-link su-card__link su-link--action'
+        class: 'su-image-cta-paragraph--link su-link--action'
     type: link
     region: link
 hidden: {  }

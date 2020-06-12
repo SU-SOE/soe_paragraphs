@@ -8,7 +8,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: zsI2S3R-K4ja2z0Y72Gm0Vsil0gyLtmBS8fcniXXLuo
+  default_config_hash: 1vOrSEFtzm6rA5mw96sEn8T05i9P-DPkYy99C6wecDk
 id: paragraph.cta_list.su_cta_list_links
 field_name: su_cta_list_links
 entity_type: paragraph

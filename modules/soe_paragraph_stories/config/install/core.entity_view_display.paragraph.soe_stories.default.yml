@@ -35,8 +35,9 @@ third_party_settings:
         - su_stories_title
       quote:
         - su_stories_quote
-      links:
+      link:
         - su_stories_node_link
+      cta:
         - su_stories_cta_link
 id: paragraph.soe_stories.default
 targetEntityType: paragraph
@@ -44,7 +45,9 @@ bundle: soe_stories
 mode: default
 content:
   su_stories_cta_link:
+    type: link
     weight: 5
+    region: cta
     label: hidden
     settings:
       trim_length: 80
@@ -54,9 +57,7 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: su-stories-paragraph--cta-link
-    type: link
-    region: links
+        class: 'su-stories-paragraph--cta su-button'
   su_stories_name:
     weight: 1
     label: hidden
@@ -78,9 +79,9 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: su-stories-paragraph--story-link
+        class: 'su-stories-paragraph--story-link su-link--external'
     type: link
-    region: links
+    region: link
   su_stories_photo:
     type: entity_reference_entity_view
     weight: 0

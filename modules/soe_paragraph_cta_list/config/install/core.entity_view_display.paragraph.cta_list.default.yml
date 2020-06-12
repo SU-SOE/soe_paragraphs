@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.cta_list
   module:
     - ds
+    - field_formatter_class
     - link
     - text
 third_party_settings:
@@ -17,7 +18,7 @@ third_party_settings:
       id: pattern_cta-list-paragraph
       library: null
       disable_css: false
-      entity_classes: all_classes
+      entity_classes: no_classes
       settings:
         pattern:
           field_templates: default
@@ -30,7 +31,7 @@ third_party_settings:
       links:
         - su_cta_list_links
 _core:
-  default_config_hash: H5URs120HzqlqumTNKdBAhvQmvrYyJ-G2TtWe1gtfp0
+  default_config_hash: PLmkh9jzI6OU7Zi057Qf3WyUwD-vIVaEe0MnzqBfDms
 id: paragraph.cta_list.default
 targetEntityType: paragraph
 bundle: cta_list
@@ -40,7 +41,9 @@ content:
     weight: 1
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: su-cta-list-paragraph--description
     type: text_default
     region: deck
   su_cta_list_header:
@@ -48,7 +51,9 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: su-cta-list-paragraph--header
     type: string
     region: header
   su_cta_list_links:
@@ -58,9 +63,13 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: 'su-cta-list-paragraph--links su-link--action'
+      ds:
+        ds_limit: ''
     type: link
     region: links
 hidden: {  }

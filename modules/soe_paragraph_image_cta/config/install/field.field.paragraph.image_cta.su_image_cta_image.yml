@@ -7,7 +7,7 @@ dependencies:
     - media.type.image
     - paragraphs.paragraphs_type.image_cta
 _core:
-  default_config_hash: MVqqnpMpk4Yi8IFrVyoHnrKWrxf4L_FN-Yyr49aI0y0
+  default_config_hash: FSXP5Gc0Hcn7OmnHWRrT-TIjW_qhhdNT9DGBNi0ZxP8
 id: paragraph.image_cta.su_image_cta_image
 field_name: su_image_cta_image
 entity_type: paragraph
