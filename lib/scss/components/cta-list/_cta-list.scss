@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.su-cta-list-paragraph{
+.su-cta-list-paragraph {
 
     @include modular-spacing('padding-top', 3);
     @include modular-spacing('padding-left', 2);
@@ -8,7 +8,8 @@
 
     border-top: 1px solid $su-color-cool-grey-25;
 
-    @include grid-media-between('xs', 'md'){
+    @include grid-media-max('md') {
+
         @include modular-spacing('padding-left', 0);
         @include modular-spacing('padding-right', 0);
     }
