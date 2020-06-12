@@ -1,7 +1,7 @@
 name: 'Image CTA Paragraph'
 description: 'A paragraph type which provides an image and CTA button'
 type: module
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 package: Stanford
 dependencies:
   - ds
