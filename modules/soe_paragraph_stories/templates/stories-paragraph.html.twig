@@ -13,7 +13,6 @@
  *
  */
 #}
-
 {%- set attributes = attributes.addClass(['su-stories-paragraph', modifier_class]) -%}
 
 {%- set img_variant_keys = image|keys -%}
@@ -30,22 +29,28 @@
 {%- else -%}
 {%- set border_color = 'border-color-default' -%}
 {%- endif -%}
+{%- set img_attributes = create_attribute() -%}
+{%- set img_classes = ['su-stories-paragraph--photo', border_color] -%}
 
-{%- set img_attributes = attributes.addClass('su-stories-paragraph--photo', border_color) -%}
+{%- set quote_keys = quote|keys -%}
+{%- set quote_field_name = quote_keys[0]  -%}
+{%- set quote_field = quote[quote_field_name]  -%}
+{%- set quote_value = quote_field['#items'][0].value -%}
 
 <div{{ attributes }}>
-    {{ kint(border_color) }}
-    <div class="su-stories-paragraph--card">
-        <div class="su-stories-paragraph--content">
-            <div{{ img_attributes }}>
-                {{ image }}
-            </div>
-            <div class="su-stories-paragraph--details">
-                {{ paragraph_content }}
-            </div>
-        </div>
-        <div class="su-stories-paragraph--cta-region">
-            {{ cta }}
-        </div>
+  <div class="su-stories-paragraph--content">
+    <div{{ img_attributes.addClass(img_classes) }}>
+      {{ image }}
     </div>
+    <div class="su-stories-paragraph--details">
+      {{ person_content }}
+      <div class="su-stories-paragraph--quote">
+        <p>"{{ quote_value }} ..."</p>
+      </div>
+      {{ link }}
+    </div>
+  </div>
+  <div class="su-stories-paragraph--cta-region">
+    {{ cta }}
+  </div>
 </div>

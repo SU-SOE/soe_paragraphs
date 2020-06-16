@@ -10,10 +10,18 @@ stories-paragraph:
       type: text
       label: "Image"
       description: "The image to display for the Paragraph"
-    paragraph_content:
+    person_content:
       type: text
       label: "Content"
       description: "The main content area"
+    quote:
+      type: text
+      label: "Quote"
+      description: "The quote for the story"
+    link:
+      type: text
+      label: "Link"
+      description: "Link to the story node"
     cta:
       type: text
       label: "CTA"
