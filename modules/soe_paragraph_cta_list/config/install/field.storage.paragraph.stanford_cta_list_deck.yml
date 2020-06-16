@@ -5,7 +5,7 @@ dependencies:
     - paragraphs
     - text
 _core:
-  default_config_hash: gyhOj3z9nel3P1plyLM_otVsdpOKLOQgStN5X7eh6qk
+  default_config_hash: LtlZ42J-qHkAQ7eB5Eel9sZR_SzfJRbj63uEPox2y6M
 id: paragraph.stanford_cta_list_deck
 field_name: stanford_cta_list_deck
 entity_type: paragraph

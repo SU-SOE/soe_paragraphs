@@ -14,6 +14,8 @@ dependencies:
     - ds
     - field_formatter_class
     - link
+    - options
+    - stanford_media
     - text
 third_party_settings:
   ds:
@@ -29,7 +31,8 @@ third_party_settings:
     regions:
       image:
         - stanford_stories_photo
-      name:
+        - stanford_stories_photo_border
+      person_content:
         - stanford_stories_name
         - stanford_stories_title
       quote:
@@ -38,6 +41,8 @@ third_party_settings:
         - stanford_stories_node_link
       cta:
         - stanford_stories_cta_link
+_core:
+  default_config_hash: 02O7gZXP9P8m2VofA9QrJ45HCimNF5Doy4bCTJgr8R8
 id: paragraph.stanford_stories.default
 targetEntityType: paragraph
 bundle: stanford_stories
@@ -45,7 +50,7 @@ mode: default
 content:
   stanford_stories_cta_link:
     type: link
-    weight: 5
+    weight: 6
     region: cta
     label: hidden
     settings:
@@ -58,7 +63,7 @@ content:
       field_formatter_class:
         class: 'su-stories-paragraph--cta su-button'
   stanford_stories_name:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -66,9 +71,11 @@ content:
       field_formatter_class:
         class: su-stories-paragraph--name
     type: string
-    region: name
+    region: person_content
   stanford_stories_node_link:
-    weight: 4
+    type: link
+    weight: 5
+    region: link
     label: hidden
     settings:
       trim_length: 80
@@ -78,36 +85,41 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'su-stories-paragraph--story-link su-link--external'
-    type: link
-    region: link
+        class: 'su-link--external su-stories-paragraph--node-link'
   stanford_stories_photo:
-    type: entity_reference_entity_view
+    type: media_responsive_image_formatter
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: stanford_image_large_square
+      image_style: ''
       link: false
-    third_party_settings: {  }
-    region: image
-  stanford_stories_quote:
-    weight: 3
-    label: hidden
-    settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: su-stories-paragraph--quote
+        class: su-stories-paragraph--photo
+    region: image
+  stanford_stories_photo_border:
+    type: list_key
+    weight: 1
+    region: image
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  stanford_stories_quote:
     type: text_default
+    weight: 4
     region: quote
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   stanford_stories_title:
-    weight: 2
+    type: string
+    weight: 3
+    region: person_content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
         class: su-stories-paragraph--title
-    type: string
-    region: name
-hidden:
-  stanford_stories_photo_border: true
+hidden: {  }

@@ -4,7 +4,7 @@ dependencies:
   module:
     - paragraphs
 _core:
-  default_config_hash: 3hifLqiklAhlRVJD_Um0FX91G4o13vkQ47oPJPPFeYU
+  default_config_hash: hXv_nKb7SHyTvptscg4Sl3-IY5JX1Rzc78TBhtvlEiY
 id: paragraph.stanford_cta_list_header
 field_name: stanford_cta_list_header
 entity_type: paragraph

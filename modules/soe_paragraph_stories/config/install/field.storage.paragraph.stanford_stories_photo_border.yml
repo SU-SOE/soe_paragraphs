@@ -4,6 +4,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: ejiB_vH-1pxHKYUtWGpNHJYZWWlgzoYE7zF9gqffuPI
 id: paragraph.stanford_stories_photo_border
 field_name: stanford_stories_photo_border
 entity_type: paragraph
@@ -12,13 +14,13 @@ settings:
   allowed_values:
     -
       value: '1'
-      label: 'Color 1'
+      label: Turquoise
     -
       value: '2'
-      label: 'Color 2'
+      label: Pink
     -
       value: '3'
-      label: 'Color 3'
+      label: Orange
   allowed_values_function: ''
 module: options
 locked: false

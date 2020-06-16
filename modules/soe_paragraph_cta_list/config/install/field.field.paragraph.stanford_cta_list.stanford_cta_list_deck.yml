@@ -13,7 +13,7 @@ third_party_settings:
     stanford_minimal_html: stanford_minimal_html
     plain_text: '0'
 _core:
-  default_config_hash: p9Bf_-CWTOBDMXcTqVL7qhX5kx25z9_Ty1wYg4KbWWo
+  default_config_hash: lsrxQ_Cq4Q5_5nj_y1qM-D5A8gCPeJcXaGXQyxBlXXM
 id: paragraph.stanford_cta_list.stanford_cta_list_deck
 field_name: stanford_cta_list_deck
 entity_type: paragraph

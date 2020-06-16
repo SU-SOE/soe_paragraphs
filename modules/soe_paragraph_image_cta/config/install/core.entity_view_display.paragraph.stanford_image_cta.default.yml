@@ -22,19 +22,18 @@ third_party_settings:
           field_templates: default
           variant: default
     regions:
-      image:
+      paragraph_content:
         - stanford_image_cta_image
-      link:
         - stanford_image_cta_link
 _core:
-  default_config_hash: BpSjneacUWnuKWYre5UiKK7BeIDibO6xRBvmVWcsdIU
+  default_config_hash: N8C8SLINs76Viq8HFAM9cUDyNPmLiK_5TvBTlTTMnEI
 id: paragraph.stanford_image_cta.default
 targetEntityType: paragraph
 bundle: stanford_image_cta
 mode: default
 content:
   stanford_image_cta_image:
-    type: media_responsive_image_formatter
+    type: media_image_formatter
     weight: 0
     label: hidden
     settings:
@@ -44,9 +43,11 @@ content:
     third_party_settings:
       field_formatter_class:
         class: su-image-cta-paragraph--image
-    region: image
+    region: paragraph_content
   stanford_image_cta_link:
+    type: link
     weight: 1
+    region: paragraph_content
     label: hidden
     settings:
       trim_length: 80
@@ -56,7 +57,5 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'su-image-cta-paragraph--link su-link--action'
-    type: link
-    region: link
+        class: 'su-link--action su-image-cta-paragraph--link'
 hidden: {  }

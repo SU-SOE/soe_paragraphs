@@ -6,6 +6,8 @@ dependencies:
     - paragraphs.paragraphs_type.stanford_stories
   module:
     - options
+_core:
+  default_config_hash: 2NcGP23QBbNNKNesP3UqMp4DUOvaqwLLWSbV89227F4
 id: paragraph.stanford_stories.stanford_stories_photo_border
 field_name: stanford_stories_photo_border
 entity_type: paragraph

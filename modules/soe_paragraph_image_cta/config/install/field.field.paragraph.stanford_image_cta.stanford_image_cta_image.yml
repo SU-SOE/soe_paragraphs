@@ -6,7 +6,7 @@ dependencies:
     - media.type.image
     - paragraphs.paragraphs_type.stanford_image_cta
 _core:
-  default_config_hash: FSXP5Gc0Hcn7OmnHWRrT-TIjW_qhhdNT9DGBNi0ZxP8
+  default_config_hash: f4nPxPxVFqzQF7iquqUf2sNaAa51pAqZ6N2JUyPyltA
 id: paragraph.stanford_image_cta.stanford_image_cta_image
 field_name: stanford_image_cta_image
 entity_type: paragraph

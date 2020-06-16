@@ -10,6 +10,7 @@ dependencies:
     - ds
     - field_formatter_class
     - link
+    - stanford_fields
     - text
 third_party_settings:
   ds:
@@ -23,38 +24,38 @@ third_party_settings:
           field_templates: default
           variant: default
     regions:
-      header:
+      paragraph_content:
         - stanford_cta_list_header
-      deck:
         - stanford_cta_list_deck
       links:
         - stanford_cta_list_links
 _core:
-  default_config_hash: PLmkh9jzI6OU7Zi057Qf3WyUwD-vIVaEe0MnzqBfDms
+  default_config_hash: xISn3fHI5NABbqI3RBPYtT8Qsdy-0ihpqrcBOK06h0s
 id: paragraph.stanford_cta_list.default
 targetEntityType: paragraph
 bundle: stanford_cta_list
 mode: default
 content:
   stanford_cta_list_deck:
+    type: text_default
     weight: 1
+    region: paragraph_content
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
         class: su-cta-list-paragraph--description
-    type: text_default
-    region: deck
   stanford_cta_list_header:
     weight: 0
     label: hidden
     settings:
-      link_to_entity: false
+      tag: h2
+      linked: false
     third_party_settings:
       field_formatter_class:
         class: su-cta-list-paragraph--header
-    type: string
-    region: header
+    type: entity_title_heading
+    region: paragraph_content
   stanford_cta_list_links:
     weight: 2
     label: hidden

@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 5cp5IbJ7U3_c2y98UV68feejH7tSkB98IZ6vyX0gQOI
 id: stanford_stories
 label: Stories
 icon_uuid: null

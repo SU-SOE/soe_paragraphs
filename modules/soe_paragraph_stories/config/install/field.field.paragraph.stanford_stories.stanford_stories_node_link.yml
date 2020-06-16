@@ -6,6 +6,8 @@ dependencies:
     - paragraphs.paragraphs_type.stanford_stories
   module:
     - link
+_core:
+  default_config_hash: mmUfF2xGXg57cqGTs-fBJruOwikCOWIRRHJesYPB9dI
 id: paragraph.stanford_stories.stanford_stories_node_link
 field_name: stanford_stories_node_link
 entity_type: paragraph

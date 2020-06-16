@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: pWztsy2d_dsGSCW0oJY3s7-uknxPOemIE528GByxzuk
 id: paragraph.stanford_stories_title
 field_name: stanford_stories_title
 entity_type: paragraph

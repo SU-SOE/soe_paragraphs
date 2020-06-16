@@ -5,7 +5,7 @@ dependencies:
     - field.storage.paragraph.stanford_cta_list_header
     - paragraphs.paragraphs_type.stanford_cta_list
 _core:
-  default_config_hash: Rr4fnDHW1aIu8zLU0wQyXR3iT03Qw7xSUgnI67sjb2o
+  default_config_hash: MmhdcgpmwNhcvxOHFU4EmdyclaHQ7T1yNbvDJ-EM3eo
 id: paragraph.stanford_cta_list.stanford_cta_list_header
 field_name: stanford_cta_list_header
 entity_type: paragraph

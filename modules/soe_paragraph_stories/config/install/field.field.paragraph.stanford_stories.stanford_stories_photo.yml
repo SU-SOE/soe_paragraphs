@@ -5,6 +5,8 @@ dependencies:
     - field.storage.paragraph.stanford_stories_photo
     - media.type.image
     - paragraphs.paragraphs_type.stanford_stories
+_core:
+  default_config_hash: bEG4W7OC7hFFMLvX90mum0scF-KALgwe0t5jv9j-gn0
 id: paragraph.stanford_stories.stanford_stories_photo
 field_name: stanford_stories_photo
 entity_type: paragraph
