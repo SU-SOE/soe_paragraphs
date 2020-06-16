@@ -6,14 +6,10 @@ cta-list-paragraph:
       label: Default
       Description: "Default"
   fields:
-    header:
+    paragraph_content:
       type: text
-      label: "Header"
-      description: "The headline text for the paragraph"
-    deck:
-      type: text
-      label: "Deck"
-      description: "The body text for the paragraph"
+      label: "Content"
+      description: "The headline and description text for the paragraph"
     links:
       type: text
       label: "Links"

@@ -1,7 +1,3 @@
-@media (max-width: 767px) {
-  .ptype-image-cta {
-    margin-bottom: 0; } }
-
 @media only screen and (max-width: 767px) and (min-width: 0) {
   .su-image-cta-paragraph {
     margin-bottom: 2.31rem; } }
@@ -16,15 +12,15 @@
 
 @media only screen and (min-width: 0) {
   .su-image-cta-paragraph .su-image-cta-paragraph--image {
-    margin-bottom: 2.31rem; } }
+    margin-bottom: 1.6rem; } }
 
 @media only screen and (min-width: 768px) {
   .su-image-cta-paragraph .su-image-cta-paragraph--image {
-    margin-bottom: 2.6rem; } }
+    margin-bottom: 1.8rem; } }
 
 @media only screen and (min-width: 1500px) {
   .su-image-cta-paragraph .su-image-cta-paragraph--image {
-    margin-bottom: 2.74rem; } }
+    margin-bottom: 1.9rem; } }
 
 @media (max-width: 767px) {
   .su-image-cta-paragraph .su-image-cta-paragraph--image {
@@ -43,14 +39,19 @@
     margin-bottom: 11.4rem; } }
 
 .su-image-cta-paragraph .su-image-cta-paragraph--link a {
-  color: #b1040e; }
+  color: #b1040e;
+  text-decoration: none; }
+  .su-image-cta-paragraph .su-image-cta-paragraph--link a:hover {
+    color: #2e2d29; }
+  .su-image-cta-paragraph .su-image-cta-paragraph--link a:focus {
+    color: #2e2d29; }
 
 .su-image-cta-paragraph .su-image-cta-paragraph--link::after {
   background-color: #b1040e; }
   .su-image-cta-paragraph .su-image-cta-paragraph--link::after:hover {
-    background-color: #b1040e; }
+    background-color: #2e2d29; }
   .su-image-cta-paragraph .su-image-cta-paragraph--link::after:focus {
-    background-color: #b1040e; }
+    background-color: #2e2d29; }
   .su-image-cta-paragraph .su-image-cta-paragraph--link::after:active {
     background-color: #b1040e; }
 

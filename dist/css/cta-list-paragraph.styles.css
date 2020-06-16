@@ -52,11 +52,9 @@
   .su-cta-list-paragraph {
     padding-right: 1.9rem; } }
   .su-cta-list-paragraph .su-cta-list-paragraph--header {
-    font-size: 1.953125em;
-    letter-spacing: -0.016em; }
-    @media (max-width: 767px) {
-      .su-cta-list-paragraph .su-cta-list-paragraph--header {
-        font-size: 1.66015625em; } }
+    font-size: 1.5625em;
+    letter-spacing: -0.012em;
+    font-weight: 700; }
     @media only screen and (min-width: 0) {
       .su-cta-list-paragraph .su-cta-list-paragraph--header {
         margin-bottom: 2.31rem; } }
@@ -90,15 +88,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%; }
-    @media only screen and (min-width: 0) {
-      .su-cta-list-paragraph .su-cta-list--links {
-        padding-bottom: 9.6rem; } }
-    @media only screen and (min-width: 768px) {
-      .su-cta-list-paragraph .su-cta-list--links {
-        padding-bottom: 10.8rem; } }
-    @media only screen and (min-width: 1500px) {
-      .su-cta-list-paragraph .su-cta-list--links {
-        padding-bottom: 11.4rem; } }
     @media only screen and (min-width: 0) and (max-width: 575px) {
       .su-cta-list-paragraph .su-cta-list--links {
         display: block;

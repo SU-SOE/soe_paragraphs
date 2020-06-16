@@ -8,29 +8,43 @@
  * Available variables:
  *
  * {{ image }}
- * {{ name }}
- * {{ quote }}
- * {{ link }}
+ * {{ paragraph_content }}
  * {{ cta }}
- * {{ attributes }}
- * {{ variant }}
  *
  */
 #}
 
 {%- set attributes = attributes.addClass(['su-stories-paragraph', modifier_class]) -%}
 
+{%- set img_variant_keys = image|keys -%}
+{%- set img_variant_field_name = img_variant_keys[1] -%}
+{%- set img_variant_field = image[img_variant_field_name] -%}
+{%- set img_variant_value = img_variant_field['#items'][0].value  -%}
+
+{%- if img_variant_value == 1 -%}
+{%- set border_color = 'border-color-1' -%}
+{%- elseif img_variant_value == 2 -%}
+{%- set border_color = 'border-color-2' -%}
+{%- elseif img_variant_value == 3 -%}
+{%- set border_color = 'border-color-3' -%}
+{%- else -%}
+{%- set border_color = 'border-color-default' -%}
+{%- endif -%}
+
+{%- set img_attributes = attributes.addClass('su-stories-paragraph--photo', border_color) -%}
+
 <div{{ attributes }}>
-    <div class="flex-12-of-12 flex-lg-10-of-12 flex-xl-8-of-12 su-stories--card">
-        <div class="su-stories--content">
-            {{ image }}
-            <div class="su-stories--details">
-                {{ name }}
-                {{ quote }}
-                {{ link }}
+    {{ kint(border_color) }}
+    <div class="su-stories-paragraph--card">
+        <div class="su-stories-paragraph--content">
+            <div{{ img_attributes }}>
+                {{ image }}
+            </div>
+            <div class="su-stories-paragraph--details">
+                {{ paragraph_content }}
             </div>
         </div>
-        <div class="su-stories--cta">
+        <div class="su-stories-paragraph--cta-region">
             {{ cta }}
         </div>
     </div>

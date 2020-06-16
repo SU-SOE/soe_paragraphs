@@ -5,31 +5,11 @@ image-cta-paragraph:
     default:
       label: Minimal
       description: "Minimal"
-    minimal:
-      label: Card
-      description: "Card"
-      modifier_class: su-image-cta-paragraph--card
-    color1:
-      label: "Color 1"
-      description: "Color Button Variant 1"
-      modifier_class: su-image-cta-paragraph--color-1
-    color2:
-      label: "Color 2"
-      description: "Color Button Variant 2"
-      modifier_class: su-image-cta-paragraph--color-2
-    color3:
-      label: "Color 3"
-      description: "Color Button Variant 3"
-      modifier_class: su-image-cta-paragraph--color-3
   fields:
-    image:
+    paragraph_content:
       type: text
-      label: "Image"
+      label: "Content"
       description: "The image to display for the Paragraph"
-    link:
-      type: text
-      label: "CTA Link"
-      description: "The link to display for the Paragraph"
   use: "@soe_paragraph_image_cta/image-cta-paragraph.html.twig"
   libraries:
     - image-cta-paragraph:

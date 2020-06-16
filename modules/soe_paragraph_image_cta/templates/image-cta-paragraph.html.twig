@@ -8,8 +8,7 @@
  *
  * Available variables:
  *
- * {{ image }}
- * {{ link }}
+ * {{ paragraph_content }}
  *
  */
 #}
@@ -17,10 +16,5 @@
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
-    {# kint() #}
-
-    {{ image }}
-
-    {{ link }}
-
+  {{ paragraph_content }}
 </div>

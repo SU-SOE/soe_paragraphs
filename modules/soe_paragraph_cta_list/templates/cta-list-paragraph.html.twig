@@ -8,40 +8,60 @@
  *
  * Available variables:
  *
- * {{ header }}
- * {{ deck }}
+ * {{ paragraph_content }}
  * {{ links }}
  *
  */
 #}
 {%- set attributes = attributes.addClass(['su-cta-list-paragraph', modifier_class]) -%}
-{%- set link_count = links.su_cta_list_links['#items']|length -%}
+{%- set field_keys = links|keys -%}
+{%- set field_name = field_keys[0] -%}
+{%- set field_info = links[field_name] -%}
+{%- set field_items = field_info["#items"] -%}
+{%- set link_count = field_items|length -%}
+{%- set formatter_class = field_info['#third_party_settings']['field_formatter_class']['class'] -%}
+
 {# We need to figure out how many links go in each column. #}
 {%- if link_count%2 == 0 -%}
-    {%- set col_1_link_count = link_count/2 -%}
+  {%- set col_1_link_count = link_count/2 -%}
 {%- else -%}
-    {%- set col_1_link_count = ((link_count/2)-(1/2))+1 -%}
+  {%- set col_1_link_count = link_count//2 + 1 -%}
 {%- endif -%}
 
 <div{{ attributes }}>
-    {{ header }}
-    {{ deck }}
-    <div class="su-cta-list--links">
-        {%- if link_count > 1 -%}
-            <div class="col-1">
-                {%- for i in 0..col_1_link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
-                {% endfor -%}
-            </div>
-            <div class="col-2">
-                {%- for i in col_1_link_count..link_count-1 %}
-                    <a href="{{ links.su_cta_list_links[i]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[i]['#title'] }}</a>
-                {% endfor -%}
-            </div>
-        {%- else -%}
-        <div class="col-1">
-            <a href="{{ links.su_cta_list_links[0]['#url'] }}" class="su-link su-card__link su-link--action">{{ links.su_cta_list_links[0]['#title'] }}</a>
-        </div>
-        {%- endif -%}
-    </div>
+
+  {{ paragraph_content }}
+
+  <div class="su-cta-list--links">
+    {%- if link_count > 1 -%}
+      <div class="col-1">
+        {%- for current_item in field_items|slice(0, (col_1_link_count)) -%}
+          {% if not formatter_class is empty %}
+            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+          {% else %}
+            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+          {% endif %}
+        {% endfor -%}
+      </div>
+      <div class="col-2">
+        {%- for current_item in field_items|slice(col_1_link_count, (link_count - 1)) -%}
+          {% if not formatter_class is empty %}
+            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+          {% else %}
+            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+          {% endif %}
+        {% endfor -%}
+      </div>
+    {%- else -%}
+      <div class="col-1">
+        {%- for current_item in field_items -%}
+          {% if not formatter_class is empty %}
+            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+          {% else %}
+            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+          {% endif %}
+        {% endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
 </div>
