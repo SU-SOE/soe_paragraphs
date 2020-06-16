@@ -29,8 +29,6 @@ third_party_settings:
         - stanford_cta_list_deck
       links:
         - stanford_cta_list_links
-_core:
-  default_config_hash: xISn3fHI5NABbqI3RBPYtT8Qsdy-0ihpqrcBOK06h0s
 id: paragraph.stanford_cta_list.default
 targetEntityType: paragraph
 bundle: stanford_cta_list

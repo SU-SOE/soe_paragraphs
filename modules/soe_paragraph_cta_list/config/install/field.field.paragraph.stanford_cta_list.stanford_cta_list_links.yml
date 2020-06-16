@@ -6,8 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.stanford_cta_list
   module:
     - link
-_core:
-  default_config_hash: 2yjary7iXepayh1cg6Ocl-hHM42XiZoOhtrwhNuCFL4
 id: paragraph.stanford_cta_list.stanford_cta_list_links
 field_name: stanford_cta_list_links
 entity_type: paragraph

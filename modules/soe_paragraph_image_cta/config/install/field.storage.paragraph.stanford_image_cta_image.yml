@@ -4,8 +4,6 @@ dependencies:
   module:
     - media
     - paragraphs
-_core:
-  default_config_hash: V_ar39-OQHcjMjBUDZkr7GXO9Y3VRyFKXEpKglBpw5k
 id: paragraph.stanford_image_cta_image
 field_name: stanford_image_cta_image
 entity_type: paragraph

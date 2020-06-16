@@ -3,8 +3,6 @@ status: true
 dependencies:
   content:
     - 'file:file:14078cff-fbb6-4169-910e-4a2120f908ae'
-_core:
-  default_config_hash: R9DE8aBxaEVrkl0M0dIDZt_JThL0nyHc3JWkoyat-IQ
 id: stanford_image_cta
 label: 'Image CTA'
 icon_uuid: 14078cff-fbb6-4169-910e-4a2120f908ae

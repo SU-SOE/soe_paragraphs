@@ -9,8 +9,6 @@ dependencies:
   module:
     - link
     - text
-_core:
-  default_config_hash: 8-3k3Re6RhoAeNiBzg8L-mRpnI3Pd5Mad54fiisIy50
 id: paragraph.stanford_cta_list.default
 targetEntityType: paragraph
 bundle: stanford_cta_list

@@ -4,8 +4,6 @@ dependencies:
   config:
     - field.storage.paragraph.stanford_stories_name
     - paragraphs.paragraphs_type.stanford_stories
-_core:
-  default_config_hash: GFullkNsmnmTxSQ-zHgKWih-8T6xcxMfonGgyJmVBow
 id: paragraph.stanford_stories.stanford_stories_name
 field_name: stanford_stories_name
 entity_type: paragraph

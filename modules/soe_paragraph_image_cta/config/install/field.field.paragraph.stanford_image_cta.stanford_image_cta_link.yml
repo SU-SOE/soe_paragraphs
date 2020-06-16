@@ -6,8 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.stanford_image_cta
   module:
     - link
-_core:
-  default_config_hash: YZ3ijPyoTxLHZgucaD4xwah5BNQaykkhUVq4z4Hd74Q
 id: paragraph.stanford_image_cta.stanford_image_cta_link
 field_name: stanford_image_cta_link
 entity_type: paragraph

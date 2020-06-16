@@ -4,8 +4,6 @@ dependencies:
   module:
     - paragraphs
     - text
-_core:
-  default_config_hash: lpCOldC0gOmbzlsBbUZzVctIol5osfBj_bt4ldbpXSk
 id: paragraph.stanford_stories_quote
 field_name: stanford_stories_quote
 entity_type: paragraph

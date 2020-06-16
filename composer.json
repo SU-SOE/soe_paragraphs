@@ -9,6 +9,7 @@
   "prefer-stable": true,
   "require": {
     "drupal/paragraphs": "~1.8",
-    "su-sws/jumpstart_ui": "dev-8.x-1.x||*"
+    "su-sws/jumpstart_ui": "dev-8.x-1.x",
+    "su-sws/stanford_text_editor": "dev-8.x-1.x"
   }
 }

@@ -8,8 +8,6 @@ dependencies:
   module:
     - link
     - media_library
-_core:
-  default_config_hash: SSiFjKqCzs4FY8jobbiFxfzMruv4_c4g3pNMvVDbQGA
 id: paragraph.stanford_image_cta.default
 targetEntityType: paragraph
 bundle: stanford_image_cta
