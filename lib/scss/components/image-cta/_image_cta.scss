@@ -6,7 +6,7 @@
     @include modular-spacing('margin-bottom', 1);
   };
 
-  .su-image-cta-paragraph--image {
+  .su-image-cta-paragraph__image {
     @include modular-spacing('margin-bottom', 0);
 
     @include grid-media-between('xs', 'sm') {
@@ -14,7 +14,7 @@
     };
   }
 
-  .su-image-cta-paragraph--link {
+  .su-image-cta-paragraph__link {
     @include modular-spacing('margin-bottom', 7);
 
     a {

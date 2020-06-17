@@ -32,23 +32,23 @@
 
   {{ paragraph_content }}
 
-  <div class="su-cta-list--links">
+  <div class="su-cta-list__links">
     {%- if link_count > 1 -%}
       <div class="col-1">
         {%- for current_item in field_items|slice(0, (col_1_link_count)) -%}
           {% if not formatter_class is empty %}
-            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri, { 'class': [ formatter_class ] }) }}
           {% else %}
-            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri) }}
           {% endif %}
         {% endfor -%}
       </div>
       <div class="col-2">
         {%- for current_item in field_items|slice(col_1_link_count, (link_count - 1)) -%}
           {% if not formatter_class is empty %}
-            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri, { 'class': [ formatter_class ] }) }}
           {% else %}
-            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri) }}
           {% endif %}
         {% endfor -%}
       </div>
@@ -56,9 +56,9 @@
       <div class="col-1">
         {%- for current_item in field_items -%}
           {% if not formatter_class is empty %}
-            <a href="{{ current_item.uri }}" class="{{ formatter_class }}">{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri, { 'class': [ formatter_class ] }) }}
           {% else %}
-            <a href="{{ current_item.uri }}" {{ current_item.options }}>{{ current_item.title }}</a>
+            {{ link(current_item.title, current_item.uri) }}
           {% endif %}
         {% endfor -%}
       </div>

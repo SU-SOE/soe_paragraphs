@@ -8,49 +8,47 @@
  * Available variables:
  *
  * {{ image }}
- * {{ paragraph_content }}
+ * {{ person_content }}
  * {{ cta }}
+ * {{ quote }}
+ * {{ border_color_variant }}
  *
  */
 #}
 {%- set attributes = attributes.addClass(['su-stories-paragraph', modifier_class]) -%}
 
-{%- set img_variant_keys = image|keys -%}
-{%- set img_variant_field_name = img_variant_keys[1] -%}
-{%- set img_variant_field = image[img_variant_field_name] -%}
-{%- set img_variant_value = img_variant_field['#items'][0].value  -%}
-
-{%- if img_variant_value == 1 -%}
-{%- set border_color = 'border-color-1' -%}
-{%- elseif img_variant_value == 2 -%}
-{%- set border_color = 'border-color-2' -%}
-{%- elseif img_variant_value == 3 -%}
-{%- set border_color = 'border-color-3' -%}
+{%- if border_color_variant|render|striptags|trim is not empty -%}
+{%- set border_color = 'border-color-' ~ border_color_variant|render|striptags|trim -%}
 {%- else -%}
 {%- set border_color = 'border-color-default' -%}
 {%- endif -%}
-{%- set img_attributes = create_attribute() -%}
-{%- set img_classes = ['su-stories-paragraph--photo', border_color] -%}
 
-{%- set quote_keys = quote|keys -%}
-{%- set quote_field_name = quote_keys[0]  -%}
-{%- set quote_field = quote[quote_field_name]  -%}
-{%- set quote_value = quote_field['#items'][0].value -%}
+{%- set img_attributes = create_attribute() -%}
+{%- set img_classes = ['su-stories-paragraph__photo', border_color] -%}
 
 <div{{ attributes }}>
-  <div class="su-stories-paragraph--content">
+  <div class="su-stories-paragraph__content">
+
     <div{{ img_attributes.addClass(img_classes) }}>
       {{ image }}
     </div>
-    <div class="su-stories-paragraph--details">
+
+    <div class="su-stories-paragraph__details">
       {{ person_content }}
-      <div class="su-stories-paragraph--quote">
-        <p>"{{ quote_value }} ..."</p>
+
+      {%- if quote|render|striptags('<drupal-placeholder>') is not empty -%}
+      <div class="su-stories-paragraph__quote">
+        <p>"{{ quote|render|striptags }} ..."</p>
       </div>
+      {%- endif -%}
+
       {{ link }}
     </div>
   </div>
-  <div class="su-stories-paragraph--cta-region">
+
+  {%- if cta|render|striptags('<drupal-placeholder>') is not empty -%}
+  <div class="su-stories-paragraph__cta-region">
     {{ cta }}
   </div>
+  {%- endif -%}
 </div>
