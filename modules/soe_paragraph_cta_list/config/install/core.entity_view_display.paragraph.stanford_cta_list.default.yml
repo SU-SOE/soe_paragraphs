@@ -68,7 +68,7 @@ content:
       target: '0'
     third_party_settings:
       field_formatter_class:
-        class: 'su-link--action su-image-cta-paragraph__link'
+        class: 'su-link--action su-image-cta-paragraph__links'
       ds:
         ds_limit: ''
 hidden: {  }
