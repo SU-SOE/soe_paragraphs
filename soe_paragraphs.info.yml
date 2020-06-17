@@ -5,9 +5,9 @@ core_version_requirement: ^8.8 || ^9
 package: Stanford
 version: 8.x-1.0-dev
 dependencies:
-  - paragraphs
-  - jumpstart_ui
-  - ds
-  - field
-  - text
-  - stanford_text_editor
+  - paragraphs:paragraphs
+  - jumpstart_ui:jumpstart_ui
+  - ds:ds
+  - drupal:field
+  - drupal:text
+  - stanford_text_editor:stanford_text_editor

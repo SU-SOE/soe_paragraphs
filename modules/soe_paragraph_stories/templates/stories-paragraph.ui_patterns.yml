@@ -26,6 +26,10 @@ stories-paragraph:
       type: text
       label: "CTA"
       description: "An optional CTA button"
+    border_color_variant:
+      type: integer
+      label: "Border color option"
+      description: "A numerical variant item"
   use: "@soe_paragraph_stories/stories-paragraph.html.twig"
   libraries:
     - stories-paragraph:

@@ -31,7 +31,6 @@ third_party_settings:
     regions:
       image:
         - stanford_stories_photo
-        - stanford_stories_photo_border
       person_content:
         - stanford_stories_name
         - stanford_stories_title
@@ -41,6 +40,10 @@ third_party_settings:
         - stanford_stories_node_link
       cta:
         - stanford_stories_cta_link
+      border_color_variant:
+        - stanford_stories_photo_border
+_core:
+  default_config_hash: 02O7gZXP9P8m2VofA9QrJ45HCimNF5Doy4bCTJgr8R8
 id: paragraph.stanford_stories.default
 targetEntityType: paragraph
 bundle: stanford_stories
@@ -48,7 +51,7 @@ mode: default
 content:
   stanford_stories_cta_link:
     type: link
-    weight: 6
+    weight: 5
     region: cta
     label: hidden
     settings:
@@ -61,7 +64,7 @@ content:
       field_formatter_class:
         class: 'su-stories-paragraph--cta su-button'
   stanford_stories_name:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -72,7 +75,7 @@ content:
     region: person_content
   stanford_stories_node_link:
     type: link
-    weight: 5
+    weight: 4
     region: link
     label: hidden
     settings:
@@ -98,21 +101,21 @@ content:
     region: image
   stanford_stories_photo_border:
     type: list_key
-    weight: 1
-    region: image
+    weight: 6
+    region: border_color_variant
     label: hidden
     settings: {  }
     third_party_settings: {  }
   stanford_stories_quote:
     type: text_default
-    weight: 4
+    weight: 3
     region: quote
     label: hidden
     settings: {  }
     third_party_settings: {  }
   stanford_stories_title:
     type: string
-    weight: 3
+    weight: 2
     region: person_content
     label: hidden
     settings:
@@ -121,3 +124,4 @@ content:
       field_formatter_class:
         class: su-stories-paragraph--title
 hidden: {  }
+

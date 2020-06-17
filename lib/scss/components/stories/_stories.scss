@@ -1,7 +1,7 @@
 .su-stories-paragraph {
   @include card;
 
-  .su-stories-paragraph--content {
+  .su-stories-paragraph__content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,7 +12,7 @@
     };
   }
 
-  .su-stories-paragraph--photo {
+  .su-stories-paragraph__photo {
 
     .stanford-stories-photo-border {
       display: none;
@@ -74,30 +74,30 @@
   }
 }
 
-  .su-stories--details {
+  .su-stories__details {
     @include grid-media-between('xs', 'sm') {
       display: block;
     };
   }
 
-  .su-stories-paragraph--name {
+  .su-stories-paragraph__name {
     @include type-d;
     font-weight: 800;
     @include modular-spacing('margin-top', 0);
   }
 
-  .su-stories-paragraph--title {
+  .su-stories-paragraph__title {
     @include big-paragraph;
     @include modular-spacing('margin-bottom', 0);
   }
 
-  .su-stories-paragraph--quote {
+  .su-stories-paragraph__quote {
     @include type-a;
     font-weight: 800;
     @include modular-spacing('margin-bottom', 3);
   }
 
-  .su-stories-paragraph--node-link {
+  .su-stories-paragraph__node-link {
     @include modular-spacing('margin-bottom', 6);
 
     a {
@@ -113,16 +113,13 @@
     }
   }
 
-  .su-stories-paragraph--cta-region {
+  .su-stories-paragraph__cta-region {
     display: flex;
     justify-content: center;
     @include modular-spacing('padding-bottom', 5);
-
-    .su-stories-paragraph--cta {
-      a {
-        color: #fff;
-      }
+    a {
+      @include button-primary();
+      color: #fff;
     }
   }
 }
-
