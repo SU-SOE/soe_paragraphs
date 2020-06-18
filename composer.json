@@ -1,11 +1,97 @@
 {
-  "name": "su-sws/soe_paragraphs",
-  "description": "Stanford Module Example",
+  "name": "su-soe/soe_paragraphs",
+  "description": "SOE Paragraphs",
   "type": "drupal-custom-module",
-  "homepage": "https://github.com/SU-SWS/soe_paragraphs",
+  "homepage": "https://github.com/SU-SOE/soe_paragraphs",
   "authors": [],
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {}
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor-plugin/a11ychecker",
+        "version": "1.1.1",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/a11ychecker/releases/a11ychecker_1.1.1.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor-plugin/balloonpanel",
+        "version": "4.14.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/balloonpanel/releases/balloonpanel_4.14.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor-plugin/link",
+        "version": "4.14.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/link/releases/link_4.14.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor-plugin/fakeobjects",
+        "version": "4.14.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "drupal/paragraphs": "^1.11",
+    "su-sws/jumpstart_ui": "dev-8.x-1.x",
+    "su-sws/stanford_text_editor": "dev-8.x-1.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\soe_paragraphs\\": "./src",
+      "Drupal\\soe_paragraph_cta_list\\": "./modules/soe_paragraph_cta_list/src",
+      "Drupal\\soe_paragraph_image_cta\\": "./modules/soe_paragraph_image_cta/src",
+      "Drupal\\soe_paragraph_stories\\": "./modules/soe_paragraph_stories/src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Drupal\\soe_paragraphs\\": "./tests/src",
+      "Drupal\\soe_paragraph_cta_list\\": "./modules/soe_paragraph_cta_list/tests/src",
+      "Drupal\\soe_paragraph_image_cta\\": "./modules/soe_paragraph_image_cta/tests/src",
+      "Drupal\\soe_paragraph_stories\\": "./modules/soe_paragraph_stories/tests/src"
+    }
+  }
 }

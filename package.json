@@ -7,7 +7,8 @@
     "publish": "webpack --mode=production",
     "watch": "webpack --mode=development --watch",
     "lint:js": "eslint -c .eslintrc 'src/js'",
-    "lint:sass": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss'"
+    "lint:sass": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss'",
+    "lint:sass:fix": "sass-lint-auto-fix -c .sass-lint-fix.yml"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
@@ -28,7 +29,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^3.1.1",
-    "sass-lint": "^1.12.1",
+    "sass-lint": "^1.13.1",
+    "sass-lint-auto-fix": "^0.21.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.2.0",

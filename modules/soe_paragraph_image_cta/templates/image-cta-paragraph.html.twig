@@ -1,0 +1,19 @@
+
+{#
+/**
+ * @file
+ * Image CTA Paragraph
+ *
+ * Template for the Image CTA paragraph type.
+ *
+ * Available variables:
+ *
+ * {{ paragraph_content }}
+ *
+ */
+#}
+
+{%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
+<div{{ attributes }}>
+  {{ paragraph_content }}
+</div>

@@ -8,7 +8,7 @@
  */
 
 /**
- * Implements hook_page_attachments.
+ * Implements hook_page_attachments().
  */
 function soe_paragraphs_page_attachments(array &$page) {
 
@@ -16,7 +16,5 @@ function soe_paragraphs_page_attachments(array &$page) {
   // just add a library to all pages but rather, conditionally require this
   // library only where it is needed.
   // See: https://www.drupal.org/node/2274843
-
   // $page['#attached']['library'][] = 'soe_paragraphs/soe_paragraphs';
-
 }
