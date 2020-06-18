@@ -75,8 +75,8 @@
   ],
   "require": {
     "drupal/paragraphs": "^1.11",
-    "su-sws/jumpstart_ui": "dev-8.x-1.x",
-    "su-sws/stanford_text_editor": "dev-8.x-1.x"
+    "su-sws/jumpstart_ui": "~8.1.0",
+    "su-sws/stanford_text_editor": "~8.1.0"
   },
   "autoload": {
     "psr-4": {
