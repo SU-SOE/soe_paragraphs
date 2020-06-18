@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.stanford_stories.stanford_stories_name
     - field.field.paragraph.stanford_stories.stanford_stories_node_link
     - field.field.paragraph.stanford_stories.stanford_stories_photo
-    - field.field.paragraph.stanford_stories.stanford_stories_photo_border
+    - field.field.paragraph.stanford_stories.stanford_stories_border
     - field.field.paragraph.stanford_stories.stanford_stories_quote
     - field.field.paragraph.stanford_stories.stanford_stories_title
     - paragraphs.paragraphs_type.stanford_stories
@@ -50,7 +50,7 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  stanford_stories_photo_border:
+  stanford_stories_border:
     weight: 3
     settings: {  }
     third_party_settings: {  }

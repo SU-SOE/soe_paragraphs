@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.stanford_stories.stanford_stories_name
     - field.field.paragraph.stanford_stories.stanford_stories_node_link
     - field.field.paragraph.stanford_stories.stanford_stories_photo
-    - field.field.paragraph.stanford_stories.stanford_stories_photo_border
+    - field.field.paragraph.stanford_stories.stanford_stories_border
     - field.field.paragraph.stanford_stories.stanford_stories_quote
     - field.field.paragraph.stanford_stories.stanford_stories_title
     - paragraphs.paragraphs_type.stanford_stories
@@ -41,7 +41,7 @@ third_party_settings:
       cta:
         - stanford_stories_cta_link
       border_color_variant:
-        - stanford_stories_photo_border
+        - stanford_stories_border
 id: paragraph.stanford_stories.default
 targetEntityType: paragraph
 bundle: stanford_stories
@@ -97,7 +97,7 @@ content:
       field_formatter_class:
         class: su-stories-paragraph__photo
     region: image
-  stanford_stories_photo_border:
+  stanford_stories_border:
     type: list_key
     weight: 6
     region: border_color_variant
