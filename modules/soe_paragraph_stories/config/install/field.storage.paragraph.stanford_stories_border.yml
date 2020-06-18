@@ -4,8 +4,8 @@ dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.stanford_stories_photo_border
-field_name: stanford_stories_photo_border
+id: paragraph.stanford_stories_border
+field_name: stanford_stories_border
 entity_type: paragraph
 type: list_string
 settings:
