@@ -1,21 +1,20 @@
 @charset 'UTF-8';
 
 .su-image-cta-paragraph {
+  @include modular-spacing('margin-bottom', 7);
 
   @include grid-media-between('xs', 'sm') {
     @include modular-spacing('margin-bottom', 1);
-  };
+  }
 
   .su-image-cta-paragraph__image {
-    @include modular-spacing('margin-bottom', 0);
-
     @include grid-media-between('xs', 'sm') {
       display: none;
-    };
+    }
   }
 
   .su-image-cta-paragraph__link {
-    @include modular-spacing('margin-bottom', 7);
+    @include modular-spacing('padding', 0 1 1 1);
 
     a {
       color: $su-color-bright-red;
@@ -48,12 +47,10 @@
 
     @include grid-media-between('md', 'lg') {
       @include modular-spacing('margin-bottom', 6);
-    };
+    }
 
     @include grid-media-between('xs', 'sm') {
       @include modular-spacing('margin-bottom', 0);
-    };
-
+    }
   }
-
 }
