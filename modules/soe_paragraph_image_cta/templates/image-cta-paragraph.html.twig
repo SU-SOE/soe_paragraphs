@@ -12,8 +12,10 @@
  *
  */
 #}
-
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
+
 <div{{ attributes }}>
-  {{ paragraph_content }}
+  <a href="{{ paragraph_content.stanford_image_cta_link[0]['#url']|render|striptags|trim }}">
+    {{ paragraph_content }}
+  </a>
 </div>

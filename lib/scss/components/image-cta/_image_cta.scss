@@ -3,6 +3,10 @@
 .su-image-cta-paragraph {
   @include modular-spacing('margin-bottom', 7);
 
+  @include grid-media-between('md', 'lg') {
+    @include modular-spacing('margin-bottom', 6);
+  }
+
   @include grid-media-between('xs', 'sm') {
     @include modular-spacing('margin-bottom', 1);
   }
@@ -43,14 +47,6 @@
       &:active {
         background-color: $su-color-bright-red;
       }
-    }
-
-    @include grid-media-between('md', 'lg') {
-      @include modular-spacing('margin-bottom', 6);
-    }
-
-    @include grid-media-between('xs', 'sm') {
-      @include modular-spacing('margin-bottom', 0);
     }
   }
 }
