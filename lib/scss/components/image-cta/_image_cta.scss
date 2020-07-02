@@ -1,15 +1,22 @@
 @charset 'UTF-8';
 
+// Getting the correct margins for responsive sizing.
+.content {
+  .paragraph-item {
+    &.ptype-stanford-image-cta {
+      @include modular-spacing('margin', null null 7 null);
+
+      @include grid-media-between('md', 'lg') {
+        @include modular-spacing('margin', null null 6 null);
+      }
+
+      @include grid-media-between('xs', 'sm') {
+        @include modular-spacing('margin', null null 1 null);
+      }
+    }
+  }
+}
 .su-image-cta-paragraph {
-  @include modular-spacing('margin-bottom', 7);
-
-  @include grid-media-between('md', 'lg') {
-    @include modular-spacing('margin-bottom', 6);
-  }
-
-  @include grid-media-between('xs', 'sm') {
-    @include modular-spacing('margin-bottom', 1);
-  }
 
   .su-image-cta-paragraph__image {
     @include grid-media-between('xs', 'sm') {
