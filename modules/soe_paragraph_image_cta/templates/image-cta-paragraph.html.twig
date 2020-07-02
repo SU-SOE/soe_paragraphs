@@ -8,14 +8,23 @@
  *
  * Available variables:
  *
- * {{ paragraph_content }}
+ * {{ image }}
+ * {{ link }}
  *
+
+ {{ paragraph_content.stanford_image_cta_link[0]['#url']|render|striptags|trim }}
  */
 #}
+{%- set field_keys = link|keys -%}
+{%- set field_name = field_keys[0] -%}
+{%- set link_uri = link[field_name][0]['#url']|render|striptags|trim -%}
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
-  <a href="{{ paragraph_content.stanford_image_cta_link[0]['#url']|render|striptags|trim }}">
-    {{ paragraph_content }}
-  </a>
+  {% if link|render|striptags is not empty %}
+    {{ link(image, link_uri) }}
+  {% else %}
+    {{ image }}
+  {% endif %}
+  {{ link }}
 </div>
