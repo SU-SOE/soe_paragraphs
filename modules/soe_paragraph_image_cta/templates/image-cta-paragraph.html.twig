@@ -17,7 +17,10 @@
 #}
 {%- set field_keys = link|keys -%}
 {%- set field_name = field_keys[0] -%}
-{%- set link_uri = link[field_name][0]['#url']|render|striptags|trim -%}
+
+{%- set field_info = links[field_name] -%}
+{%- set field_items = field_info["#items"] -%}
+{%- set link_uri = link[field_name]['#items'][0].uri -%}
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
