@@ -15,7 +15,7 @@
 
   .su-cta-list-paragraph__header {
     @include type-c;
-    font-weight: 700;
+    font-weight: $su-font-bold;
     @include modular-spacing('margin-bottom', 1);
   }
 
