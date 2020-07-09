@@ -15,16 +15,12 @@
 #}
 {%- set field_keys = link|keys -%}
 {%- set field_name = field_keys[0] -%}
-{%- set field_info = links[field_name] -%}
+{%- set field_info = link[field_name] -%}
 {%- set field_items = field_info["#items"] -%}
 {%- set link_uri = field_items[0].uri -%}
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
-  {% if link|render|striptags is not empty %}
-    {{ link(image, link_uri) }}
-  {% else %}
-    {{ image }}
-  {% endif %}
+  {{ link(image, link_uri) }}
   {{ link }}
 </div>
