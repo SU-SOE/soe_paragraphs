@@ -5,6 +5,36 @@
  */
 class StanfordCTAListCest {
 
+
+  protected function addParagraphField() {
+    \Drupal\field\Entity\FieldStorageConfig::create(array(
+      'field_name' => 'page_components',
+      'entity_type' => 'node',
+      'type' => 'paragraphs',
+      'cardinality' => 1,
+    ))->save();
+
+    \Drupal\field\Entity\FieldConfig::create([
+      'field_name' => 'page_components',
+      'entity_type' => 'node',
+      'bundle' => 'page',
+      'label' => 'paragraphs',
+    ])->save();
+
+    entity_get_form_display('node', 'page', 'default')
+      ->setComponent('page_components', array(
+        'type' => 'paragraphs',
+      ))
+      ->save();
+
+    entity_get_display('node', 'page', 'default')
+      ->setComponent('page_components', array(
+        'type' => 'paragraphs',
+      ))
+      ->save();
+  }
+
+
   /**
    * Create a CTA List paragraph to test.
    */
@@ -39,9 +69,11 @@ class StanfordCTAListCest {
    * Create a node to hold the paragraph.
    */
   protected function createNodeWithParagraph(\AcceptanceTester $I) {
+    $this->addParagraphField();
+
     $paragraph = $this->createParagraph($I);
     $node = $I->createEntity([
-      'type' => 'stanford_page',
+      'type' => 'page',
       'title' => 'Test CTA List',
       'su_page_components' => [
         'target_id' => $paragraph->id(),
