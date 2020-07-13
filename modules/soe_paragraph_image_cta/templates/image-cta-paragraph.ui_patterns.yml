@@ -6,10 +6,14 @@ image-cta-paragraph:
       label: Minimal
       description: "Minimal"
   fields:
-    paragraph_content:
+    image:
       type: text
       label: "Content"
       description: "The image to display for the Paragraph"
+    link:
+      type: text
+      label: "Link"
+      description: "The link to use"
   use: "@soe_paragraph_image_cta/image-cta-paragraph.html.twig"
   libraries:
     - image-cta-paragraph:
