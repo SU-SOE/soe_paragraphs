@@ -23,6 +23,10 @@
     @include grid-media-between('xs', 'sm') {
       display: none;
     }
+
+    img {
+      width: 100%;
+    }
   }
 
   .su-image-cta-paragraph__link {
