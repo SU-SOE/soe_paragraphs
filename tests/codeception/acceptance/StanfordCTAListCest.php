@@ -6,7 +6,7 @@
 class StanfordCTAListCest {
 
 
-  protected function addParagraphField() {
+  protected function addParagraphField_OLD() {
     \Drupal\field\Entity\FieldStorageConfig::create(array(
       'field_name' => 'page_components',
       'entity_type' => 'node',
@@ -32,6 +32,20 @@ class StanfordCTAListCest {
         'type' => 'paragraphs',
       ))
       ->save();
+  }
+
+  protected function addParagraphField(\AcceptanceTester $I) {
+    $I->logInWithRole('administrator');
+    $I->amOnPage('/admin/structure/types/manage/page/fields/add-field');
+    $I->selectOption('#edit-new-storage-type', 'Paragraph');
+    $I->selectOption('#edit-new-storage-type', 'Paragraph');
+    $I->seeElement('#edit-label');
+    $I->fillField('#edit-label', 'Paragraphs');
+    $I->click('Save and Continue');
+    $I->seeInCurrentUrl('node.page.field_paragraphs');
+    $I->click('Save field settings');
+    $I->seeElement('#edit-settings-handler-settings-negate-1');
+    $I->click('Save settings');
   }
 
 
