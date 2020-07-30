@@ -5,49 +5,37 @@
  */
 class StanfordCTAListCest {
 
-
-  protected function addParagraphField_OLD() {
-    \Drupal\field\Entity\FieldStorageConfig::create(array(
-      'field_name' => 'page_components',
-      'entity_type' => 'node',
-      'type' => 'paragraphs',
-      'cardinality' => 1,
-    ))->save();
-
-    \Drupal\field\Entity\FieldConfig::create([
-      'field_name' => 'page_components',
-      'entity_type' => 'node',
-      'bundle' => 'page',
-      'label' => 'paragraphs',
-    ])->save();
-
-    entity_get_form_display('node', 'page', 'default')
-      ->setComponent('page_components', array(
-        'type' => 'paragraphs',
-      ))
-      ->save();
-
-    entity_get_display('node', 'page', 'default')
-      ->setComponent('page_components', array(
-        'type' => 'paragraphs',
-      ))
-      ->save();
-  }
-
-  protected function addParagraphField(\AcceptanceTester $I) {
+  /**
+   *
+   */
+  protected function setupContentType(\AcceptanceTester $I) {
     $I->logInWithRole('administrator');
     $I->amOnPage('/admin/structure/types/manage/page/fields/add-field');
     $I->selectOption('#edit-new-storage-type', 'Paragraph');
     $I->selectOption('#edit-new-storage-type', 'Paragraph');
     $I->seeElement('#edit-label');
     $I->fillField('#edit-label', 'Paragraphs');
-    $I->click('Save and Continue');
+    $I->click('//input[@class="button button--primary js-form-submit form-submit"]');
+    $I->seeElement('#edit-field-name');
+    $I->fillField('#edit-field-name', 'paragraphs');
+    $I->click('//input[@class="button button--primary js-form-submit form-submit"]');
     $I->seeInCurrentUrl('node.page.field_paragraphs');
-    $I->click('Save field settings');
+    $I->click('//input[@id="edit-submit"]');
     $I->seeElement('#edit-settings-handler-settings-negate-1');
-    $I->click('Save settings');
+    $I->click('#edit-settings-handler-settings-negate-1');
+    $I->click('//input[@id="edit-submit"]');
+    drupal_flush_all_caches();
   }
 
+  /**
+   *
+   */
+  protected function revertContentType(\AcceptanceTester $I) {
+    $I->logInWithRole('administrator');
+    $I->amOnPage('/admin/structure/types/manage/page/fields/node.page.field_paragraphs/delete');
+    $I->click('//input[@id="edit-submit"]');
+    drupal_flush_all_caches();
+  }
 
   /**
    * Create a CTA List paragraph to test.
@@ -75,7 +63,7 @@ class StanfordCTAListCest {
           'title' => 'Link Gamma',
         ],
       ],
-    ], 'paragraph');
+    ], 'paragraph', TRUE);
     return $paragraph;
   }
 
@@ -83,25 +71,15 @@ class StanfordCTAListCest {
    * Create a node to hold the paragraph.
    */
   protected function createNodeWithParagraph(\AcceptanceTester $I) {
-    $this->addParagraphField();
-
     $paragraph = $this->createParagraph($I);
     $node = $I->createEntity([
       'type' => 'page',
       'title' => 'Test CTA List',
-      'su_page_components' => [
-        'target_id' => $paragraph->id(),
-        'entity' => $paragraph,
-        'settings' => json_encode([
-          'row' => 0,
-          'index' => 0,
-          'width' => 12,
-          'admin_title' => 'CTA List',
-        ]),
-      ],
     ]);
-    // Clear router and menu cache so that the node urls work.
-    $I->runDrush('cache-clear router');
+    $node->field_paragraphs->appendItem($paragraph);
+    $node->save();
+
+    $I->runDrush('cache-rebuild');
     return $node;
   }
 
@@ -109,6 +87,7 @@ class StanfordCTAListCest {
    * Test the CTA List paragraph in the page.
    */
   public function testCtaList(\AcceptanceTester $I) {
+    $this->setupContentType($I);
     $node = $this->createNodeWithParagraph($I);
     $I->amOnPage($node->toUrl()->toString());
     $I->canSee('Lorem Ipsum CTA List');
@@ -116,6 +95,7 @@ class StanfordCTAListCest {
     $I->canSeeLink('Link Alpha', 'http://google.com');
     $I->canSeeLink('Link Beta', 'http://google.com');
     $I->canSeeLink('Link Gamma', 'http://google.com');
+    $this->revertContentType($I);
   }
 
 }
