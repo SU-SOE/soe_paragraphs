@@ -26,8 +26,6 @@ third_party_settings:
         - stanford_image_cta_image
       link:
         - stanford_image_cta_link
-_core:
-  default_config_hash: N8C8SLINs76Viq8HFAM9cUDyNPmLiK_5TvBTlTTMnEI
 id: paragraph.stanford_image_cta.default
 targetEntityType: paragraph
 bundle: stanford_image_cta
