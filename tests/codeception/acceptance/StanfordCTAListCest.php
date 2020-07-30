@@ -87,6 +87,7 @@ class StanfordCTAListCest {
    * Test the CTA List paragraph in the page.
    */
   public function testCtaList(\AcceptanceTester $I) {
+    $I->runDrush('pm-enable soe_paragraph_cta_list');
     $this->setupContentType($I);
     $node = $this->createNodeWithParagraph($I);
     $I->amOnPage($node->toUrl()->toString());

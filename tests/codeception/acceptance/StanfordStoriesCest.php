@@ -123,6 +123,7 @@ class StanfordStoriesCest {
    * Test the CTA List paragraph in the page.
    */
   public function testStories(\AcceptanceTester $I) {
+    $I->runDrush('pm-enable soe_paragraph_stories');
     $this->setupContentType($I);
     $node = $this->createNodeWithParagraph($I);
     $I->amOnPage($node->toUrl()->toString());

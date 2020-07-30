@@ -109,6 +109,7 @@ class StanfordImageCTACest {
    * Test the Image CTA paragraph in the page.
    */
   public function testImageCta(\AcceptanceTester $I) {
+    $I->runDrush('pm-enable soe_paragraph_image_cta');
     $this->setupContentType($I);
     $node = $this->createNodeWithParagraph($I);
     $I->amOnPage($node->toUrl()->toString());
