@@ -21,6 +21,6 @@
 {%- set attributes = attributes.addClass(['su-image-cta-paragraph', modifier_class]) -%}
 
 <div{{ attributes }}>
-  {{ link(image, link_uri) }}
+  {{ link(image, link_uri, {'tabindex': '-1', 'aria-hidden': 'true', 'role': 'presentation'}) }}
   {{ link }}
 </div>
