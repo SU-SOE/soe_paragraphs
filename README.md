@@ -8,7 +8,7 @@ Changelog: [Changelog.txt](CHANGELOG.txt)
 Description
 ---
 
-The `soe_paragraphs` module provides custom paragraph types for the Stanford School of Engineering.
+The `soe_paragraphs` module provides three custom paragraph types developed for the Stanford School of Engineering.
 
 Accessibility
 ---

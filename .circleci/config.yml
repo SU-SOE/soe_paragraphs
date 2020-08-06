@@ -57,6 +57,21 @@ behat: &behat
     - store_artifacts:
         path: /var/www/html/artifacts
 
+codeception: &codeception
+  <<: *defaults
+  steps:
+    - checkout:
+        path: /var/www/test
+    - run:
+        name: Run Acceptance Tests
+        command: |
+          composer global require SU-SWS/stanford-caravan:dev-8.x-1.x
+          ~/.composer/vendor/bin/sws-caravan codeception /var/www/html --extension-dir=/var/www/test
+    - store_test_results:
+        path: /var/www/html/artifacts/behat
+    - store_artifacts:
+        path: /var/www/html/artifacts
+
 back_to_dev: &back_to_dev
   <<: *defaults
   steps:
@@ -75,6 +90,8 @@ jobs:
     <<: *behat
   run-back-to-dev:
     <<: *back_to_dev
+  run-codeception:
+    <<: *codeception
 
 # Declare a workflow that runs all of our jobs in parallel.
 workflows:
@@ -92,15 +109,15 @@ workflows:
   weekly:
     jobs:
       - run-coverage
-      - run-behat
+      - run-codeception
     triggers:
       - schedule:
           cron: "0 0 * * 0"
           filters:
             branches:
               only:
-                - 8.x-2.x
+                - 8.x-1.x
   tests:
     jobs:
       - run-coverage
-      - run-behat
+      - run-codeception
