@@ -1,5 +1,15 @@
 # SOE Paragraphs
 
+8.x-1.0
+--------------------------------------------------------------------------------
+_Release Date: 2020-08-07_
+
+- D8CORE-2273: Moved tests into module, as well as profile. (#9) (79a3bf4)
+- D8CORE-2427: added aria tags for presentation only (768c0e9)
+- D8CORE-2427: corrected a11y problem with empty link when image was absent. (c62233b)
+- D8CORE-2247: fixup! (5635293)
+- D8CORE-2247: changing the images to responsive display (d73abfd)
+
 8.x-1.0-beta.1
 --------------------------------------------------------------------------------
 _Release Date: 2020-07-13_

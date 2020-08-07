@@ -32,11 +32,12 @@ bundle: stanford_image_cta
 mode: default
 content:
   stanford_image_cta_image:
-    type: media_multimedia_formatter
+    type: media_responsive_image_formatter
     weight: 0
     label: hidden
     settings:
       view_mode: default
+      image_style: ''
       link: false
       image:
         image_formatter: image_style
