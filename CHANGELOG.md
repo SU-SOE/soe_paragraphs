@@ -5,14 +5,15 @@
 _Release Date: 2020-08-07_
 
 - D8CORE-2273: Moved tests into module, as well as profile. (#9) (79a3bf4)
-- Merge pull request #13 from SU-SOE/D8CORE-2427 (454b3b9)
-- Merge branch '8.x-1.x' into D8CORE-2427 (848504b)
 - D8CORE-2427: added aria tags for presentation only (768c0e9)
-- Merge pull request #12 from SU-SOE/D8CORE-2427 (0ed2121)
 - D8CORE-2427: corrected a11y problem with empty link when image was absent. (c62233b)
-- Merge pull request #11 from SU-SOE/D8CORE-2247 (fa859ae)
 - D8CORE-2247: fixup! (5635293)
 - D8CORE-2247: changing the images to responsive display (d73abfd)
+
+8.x-1.0-beta.1
+--------------------------------------------------------------------------------
+_Release Date: 2020-07-13_
+
 - Merge pull request #8 from SU-SOE/D8CORE-2242 (ba236f0)
 - D8CORE-2242: fixing template, recompile css (475b57e)
 - Merge pull request #7 from SU-SOE/D8CORE-2129 (415a54e)
