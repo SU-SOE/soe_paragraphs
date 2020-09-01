@@ -79,7 +79,7 @@
     "drupal/field_formatter_class": "^1.4",
     "drupal/allowed_formats": "^1.3",
     "su-sws/stanford_fields": "dev-8.x-1.x",
-    "su-sws/jumpstart_ui": "dev-8.x-1.x",
+    "su-sws/jumpstart_ui": "dev-D8CORE-2490",
     "su-sws/stanford_text_editor": "dev-8.x-1.x"
   },
   "autoload": {
