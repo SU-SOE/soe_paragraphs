@@ -98,7 +98,7 @@
   }
 
   .su-stories-paragraph__node-link {
-    @include modular-spacing('margin-bottom', 6);
+    @include modular-spacing('margin-bottom', 1);
 
     a {
       text-decoration: none;
@@ -114,9 +114,12 @@
   }
 
   .su-stories-paragraph__cta-region {
+    @include modular-spacing('padding-bottom', 5);
+    @include modular-spacing('margin-top', 3);
+
     display: flex;
     justify-content: center;
-    @include modular-spacing('padding-bottom', 5);
+
     a {
       @include button-primary();
       color: #fff;
