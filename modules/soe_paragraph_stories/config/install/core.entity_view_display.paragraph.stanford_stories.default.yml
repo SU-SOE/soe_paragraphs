@@ -42,8 +42,6 @@ third_party_settings:
         - stanford_stories_cta_link
       border_color_variant:
         - stanford_stories_border
-_core:
-  default_config_hash: 02O7gZXP9P8m2VofA9QrJ45HCimNF5Doy4bCTJgr8R8
 id: paragraph.stanford_stories.default
 targetEntityType: paragraph
 bundle: stanford_stories
