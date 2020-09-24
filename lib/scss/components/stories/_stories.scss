@@ -113,9 +113,15 @@
     }
   }
 
+  .su-stories-paragraph__content {
+    &+ .su-stories-paragraph__cta-region {
+      @include modular-spacing('padding-top', 3);
+
+    }
+  }
+
   .su-stories-paragraph__cta-region {
     @include modular-spacing('padding-bottom', 5);
-    @include modular-spacing('margin-top', 3);
 
     display: flex;
     justify-content: center;
@@ -124,5 +130,6 @@
       @include button-primary();
       color: #fff;
     }
+
   }
 }
