@@ -39,6 +39,16 @@ content:
       view_mode: default
       image_style: ''
       link: false
+      image:
+        image_formatter: image_style
+        image_formatter_image_style: large
+        image_formatter_responsive_image_style: full_responsive
+        image_formatter_view_mode: default
+      video:
+        video_formatter: entity
+        video_formatter_view_mode: default
+      other:
+        view_mode: default
     third_party_settings:
       field_formatter_class:
         class: su-image-cta-paragraph__image
