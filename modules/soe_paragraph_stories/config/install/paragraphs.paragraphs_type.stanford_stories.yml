@@ -1,6 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:539cd9ba-a7ee-4bcc-b1b8-14bb0e54df16'
 id: stanford_stories
 label: Stories
 icon_uuid: 539cd9ba-a7ee-4bcc-b1b8-14bb0e54df16
