@@ -78,9 +78,9 @@
     "drupal/element_class_formatter": "^1.1",
     "drupal/field_formatter_class": "^1.4",
     "drupal/paragraphs": "^1.11",
-    "su-sws/jumpstart_ui": "8.x-dev",
-    "su-sws/stanford_fields": "8.x-dev",
-    "su-sws/stanford_text_editor": "8.x-dev"
+    "su-sws/jumpstart_ui": "^8.1",
+    "su-sws/stanford_fields": "^8.1",
+    "su-sws/stanford_text_editor": "^8.1"
   },
   "autoload": {
     "psr-4": {
